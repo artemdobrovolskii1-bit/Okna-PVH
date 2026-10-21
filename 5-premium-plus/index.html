@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Рамус — окна ПВХ в Челябинске, 3D-конфигуратор</title>
+<meta name="description" content="Соберите своё окно в 3D, увидите смету по строкам и теплопотери, запишитесь на замер онлайн. Окна ПВХ под ключ в Челябинске: замер завтра, монтаж за день.">
+<meta property="og:title" content="Рамус — окна ПВХ под ключ в Челябинске">
+<meta property="og:description" content="3D-окно, которое собираете сами: цена под ключ по строкам, онлайн-запись замера, личный кабинет.">
+<link href="fonts/fonts.css" rel="stylesheet">
+<!-- Яндекс Метрика: вставьте сюда код счётчика клиента -->
+<style>
+:root{--bg:#F4F7F8;--bg2:#E7EEF1;--card:#FFFFFF;--ink:#10242C;--mute:#5A6E77;--acc:#0E7C86;--acc-ink:#FFFFFF;--line:#D2DDE2;--warm:#D9822B;--r:18px;--hh:64px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Golos Text",system-ui,sans-serif;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:inherit}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}
+h1,h2,h3,.ond{font-family:Onest,"Golos Text",system-ui,sans-serif;font-weight:700;line-height:1.12;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(1.7rem,6.2vw,3.5rem)}
+h2{font-size:clamp(1.65rem,4.2vw,2.6rem)}
+h3{font-size:1.15rem}
+p{margin:0}
+.num{font-variant-numeric:tabular-nums}
+.wr{max-width:1160px;margin:0 auto;padding:0 20px}
+.sec{padding:56px 0}
+.sec.alt{background:var(--bg2)}
+.kick{display:inline-flex;align-items:center;gap:10px;font:600 .78rem/1 Onest,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:14px}
+.kick b{display:inline-grid;place-items:center;width:26px;height:26px;border:2px solid var(--acc);border-radius:6px;font-size:.72rem;letter-spacing:0}
+.lead{color:var(--mute);max-width:660px;margin-top:12px}
+.sh{margin-bottom:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 22px;border-radius:12px;border:2px solid var(--acc);background:var(--acc);color:var(--acc-ink);font:600 1rem/1.2 "Golos Text",sans-serif;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px -10px rgba(14,124,134,.7)}
+.btn.line{background:transparent;color:var(--acc)}
+.btn.line:hover{background:var(--acc);color:var(--acc-ink)}
+.btn.sm{min-height:42px;padding:8px 16px;font-size:.92rem}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+:focus-visible{outline:3px solid var(--warm);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* шапка */
+.hd{position:sticky;top:0;z-index:40;background:rgba(244,247,248,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hd .wr{display:flex;align-items:center;justify-content:space-between;gap:14px;height:var(--hh)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 1.3rem/1 Onest,sans-serif}
+.logo svg{width:30px;height:30px;flex:none}
+.hd nav{display:none}
+.hd nav a{text-decoration:none;color:var(--mute);font-size:.9rem;font-weight:500;padding:6px 2px;white-space:nowrap}
+.hd nav a:hover{color:var(--acc)}
+.hd .tel{display:none;text-decoration:none;font:700 1rem/1 Onest,sans-serif;white-space:nowrap}
+.burger{width:44px;height:44px;border:1px solid var(--line);background:var(--card);border-radius:10px;display:grid;place-items:center;padding:0}
+.burger i{display:block;width:20px;height:2px;background:var(--ink);box-shadow:0 6px 0 var(--ink),0 -6px 0 var(--ink)}
+.hd.open nav{display:flex;flex-direction:column;position:absolute;top:var(--hh);left:0;right:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px 20px 18px;max-height:calc(100svh - var(--hh));overflow:auto}
+.hd.open nav a{padding:12px 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+/* первый экран: окно собирается при прокрутке */
+.asm{position:relative;height:300vh;height:300svh;background:radial-gradient(900px 520px at 72% 38%,#fff 0,rgba(255,255,255,0) 70%),var(--bg)}
+.asm-in{position:sticky;top:var(--hh);height:calc(100vh - var(--hh));height:calc(100svh - var(--hh));min-height:520px;overflow:hidden}
+.asm-g{display:grid;grid-template-rows:auto minmax(0,1fr);gap:8px;height:100%;padding-top:14px;padding-bottom:12px}
+.asm-t .tag,.asm-t .sub,.asm-t .anchor{display:none}
+.asm h1{font-size:clamp(1.5rem,6.6vw,3.4rem)}
+.asm h1 em{font-style:normal;color:var(--acc)}
+.asm .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.asm .cta .btn{flex:1 1 150px;min-height:44px;padding:8px 14px;font-size:.95rem}
+.asm-v{position:relative;min-height:0;border-radius:var(--r);overflow:hidden;background:linear-gradient(180deg,#B9D2DC,#DDEAEF 70%,#C9DCE3);border:1px solid var(--line)}
+.asm-v canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
+.hfb{position:absolute;inset:0;display:none;place-items:center;padding:16px}
+.hfb svg{max-height:100%;width:auto;max-width:100%}
+.no3d .hfb{display:grid}
+.asm-cap{position:absolute;left:12px;top:12px;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:14px;padding:8px 12px;box-shadow:0 8px 20px -12px rgba(16,36,44,.4)}
+.asm-cap b{display:grid;place-items:center;width:28px;height:28px;border-radius:8px;background:var(--acc);color:#fff;font:700 .95rem/1 Onest,sans-serif}
+.asm-cap span{font:600 .95rem/1.2 Onest,sans-serif}
+.asm-cap small{display:block;font:400 .76rem/1.2 "Golos Text",sans-serif;color:var(--mute)}
+.asm-steps{list-style:none;margin:0;padding:0;position:absolute;left:12px;right:12px;bottom:34px;display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.asm-steps li{padding:5px 10px;border-radius:99px;background:rgba(255,255,255,.85);border:1px solid var(--line);font-size:.76rem;color:var(--mute);transition:background .25s,color .25s}
+.asm-steps li.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.asm-steps li.done{color:var(--ink)}
+.asm-bar{position:absolute;left:0;right:0;bottom:0;height:5px;background:rgba(16,36,44,.08)}
+.asm-bar i{display:block;height:100%;width:0;background:var(--acc)}
+.asm-hint{position:absolute;right:12px;top:12px;font-size:.76rem;color:var(--mute);background:rgba(255,255,255,.85);border-radius:99px;padding:5px 10px;border:1px solid var(--line)}@media(max-width:640px){.asm-hint{display:none}}
+.no3d .asm-hint,.no3d .asm-steps,.no3d .asm-bar,.no3d .asm-cap{display:none}
+.asm.no3d,.asm.st{height:auto}
+.asm.st .asm-in{position:static;height:auto;min-height:0}.asm.st .asm-v{height:380px}.asm.st .asm-hint{display:none}
+.asm.no3d .asm-in{position:static;height:auto;min-height:0}
+.asm.no3d .asm-v{height:340px}
+.hero-tag{display:inline-flex;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:7px 14px;font-size:.86rem;color:var(--mute);margin-bottom:18px}
+.hero-tag i{width:8px;height:8px;border-radius:50%;background:#2E9E5B}
+.anchor{align-items:center;gap:14px;margin-top:26px;padding:14px 16px;border:1px dashed var(--acc);border-radius:14px;background:rgba(14,124,134,.06);max-width:520px}
+.anchor strong{font:700 1.5rem/1 Onest,sans-serif;color:var(--acc);white-space:nowrap}
+.anchor span{font-size:.9rem;color:var(--mute)}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.fact b{display:block;font:700 1.7rem/1 Onest,sans-serif;color:var(--acc);margin-bottom:6px}
+.fact span{font-size:.88rem;color:var(--mute);line-height:1.35;display:block}
+/* честная цена */
+.hon{display:grid;gap:14px}
+.hc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.hc i{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:rgba(14,124,134,.1);color:var(--acc);margin-bottom:12px}
+.hc i svg{width:22px;height:22px}
+.hc h3{margin-bottom:6px}.hc p{font-size:.93rem;color:var(--mute)}
+.formula{margin-top:22px;background:var(--ink);color:#DCE8EC;border-radius:var(--r);padding:22px;font:500 .9rem/1.75 "Golos Text",monospace}
+.formula b{color:#fff;font-family:Onest,sans-serif}
+.formula code{display:block;font:500 .86rem/1.7 ui-monospace,Consolas,monospace;color:#9ADCE3;white-space:pre-wrap;word-break:break-word}
+/* 3D конфигуратор */
+.cfg{display:grid;gap:22px}
+.cfgL{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.stagewrap{position:sticky;top:var(--hh);z-index:6;background:var(--bg2);padding:8px 0 6px;margin-bottom:6px}
+.stage{position:relative;height:clamp(250px,38vh,420px);height:clamp(250px,38svh,420px);background:linear-gradient(180deg,#D9E8F0,#F2F7F9);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y;cursor:grab;outline-offset:-3px}
+.stage canvas:active{cursor:grabbing}
+.fb{position:absolute;inset:0;display:none;place-items:center;padding:12px;background:linear-gradient(180deg,#EAF2F5,#fff)}
+.fb svg{max-width:100%;max-height:100%;width:auto;height:100%}
+.nogl .fb{display:grid}.nogl canvas{display:none}
+.nogl .gl-only{display:none!important}
+.hudp,.hudt{position:absolute;z-index:3;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:12px;padding:6px 10px;font:600 .82rem/1.2 Onest,sans-serif;pointer-events:none}
+.hudp{left:10px;top:10px}
+.hudt{left:10px;bottom:10px;font-size:1.05rem;color:var(--acc)}
+.hudt small{display:block;font:400 .68rem/1.1 "Golos Text",sans-serif;color:var(--mute)}
+.zoom{position:absolute;right:10px;top:10px;z-index:3;display:flex;flex-direction:column;gap:6px}
+.zoom button{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.94);font:700 1.2rem/1 Onest,sans-serif;display:grid;place-items:center;padding:0}
+.zoom button:hover{border-color:var(--acc);color:var(--acc)}
+.pins{position:absolute;inset:0;pointer-events:none;z-index:2}
+.pin{position:absolute;left:0;top:0;opacity:0;transition:opacity .3s;display:flex;align-items:center;gap:6px;will-change:transform}
+.pin.on{opacity:1}
+.pin i{width:12px;height:12px;border-radius:50%;background:var(--warm);border:2px solid #fff;box-shadow:0 0 0 2px var(--warm);flex:none}
+.pin span{background:#fff;border:1px solid var(--line);border-radius:10px;padding:4px 8px;font-size:.74rem;line-height:1.25;max-width:150px;box-shadow:0 6px 16px -8px rgba(16,36,44,.5)}
+.pin.r{flex-direction:row-reverse}
+.toast{position:absolute;left:50%;bottom:12px;transform:translate(-50%,20px);background:var(--ink);color:#fff;border-radius:12px;padding:8px 14px;font-size:.84rem;opacity:0;transition:opacity .25s,transform .25s;pointer-events:none;z-index:4;max-width:90%;text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.loadmsg{position:absolute;inset:0;display:grid;place-items:center;color:var(--mute);font-size:.9rem;z-index:1;pointer-events:none}
+.loadmsg.off{display:none}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:8px 0 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chips::-webkit-scrollbar{display:none}
+.cg{display:flex;gap:2px;flex:none;border:1px solid var(--line);background:#fff;border-radius:99px;padding:3px}
+.cg button{min-height:40px;padding:6px 13px;border:0;border-radius:99px;background:transparent;font-weight:600;font-size:.86rem;white-space:nowrap}
+.cg button[aria-pressed=true]{background:var(--acc);color:#fff}
+.cg button:disabled{opacity:.4;cursor:not-allowed}
+.sechint{font-size:.82rem;color:var(--mute);margin:4px 2px 12px}
+.secinfo{display:none;margin:0 0 16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
+.secinfo.on{display:block}
+.secinfo h3{margin-bottom:8px}
+.secinfo ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:.9rem;color:var(--mute)}
+.secinfo ul b{color:var(--ink)}
+.secinfo .secsvg{max-width:340px;margin:10px 0 0}
+.secinfo .btn{margin-top:12px}
+.steps{display:flex;gap:6px;overflow-x:auto;padding:4px 0 10px;margin:12px 0 6px;scrollbar-width:thin}
+.steps button{flex:none;display:flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid var(--line);border-radius:99px;background:var(--card);font-weight:500;font-size:.9rem;white-space:nowrap;min-height:42px}
+.steps button b{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--bg2);font-size:.78rem}
+.steps button[aria-current=step]{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.steps button[aria-current=step] b{background:rgba(255,255,255,.25)}
+.pane{display:none;padding-top:8px}.pane.on{display:block;animation:fi .3s}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.pane h3{margin-bottom:6px}.pane>p{color:var(--mute);font-size:.93rem;margin-bottom:14px}
+.opts{display:grid;gap:10px;grid-template-columns:1fr}
+.opt{display:flex;flex-direction:column;gap:2px;text-align:left;padding:12px 14px;border:1.5px solid var(--line);background:var(--card);border-radius:12px;min-height:56px;transition:border-color .2s,background .2s}
+.opt b{font:600 .98rem/1.25 Onest,sans-serif}.opt span{font-size:.84rem;color:var(--mute)}
+.opt .mi{display:block;height:30px;margin-bottom:6px}.opt .mi svg{height:100%;width:auto;max-width:none}
+.opt:hover{border-color:var(--acc)}
+.opt[aria-pressed=true]{border-color:var(--acc);background:rgba(14,124,134,.08);box-shadow:inset 0 0 0 1px var(--acc)}
+.row2{display:grid;gap:16px}
+.fld label,.lab{display:block;font-size:.86rem;font-weight:600;margin-bottom:6px}
+.fld .val{display:flex;gap:10px;align-items:center}
+.fld input[type=number],.inp{width:100%;min-height:46px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff}
+.fld input[type=number]{max-width:120px}
+.fld input[type=range]{flex:1;accent-color:var(--acc);min-height:32px}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg button{min-width:56px;min-height:46px;padding:8px 16px;border:1.5px solid var(--line);background:#fff;border-radius:10px;font-weight:600}
+.seg button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.sel{width:100%;min-height:46px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff}
+.sashsel{display:grid;gap:10px}
+.sw{display:flex;gap:10px;flex-wrap:wrap}
+.swb{display:flex;align-items:center;gap:10px;padding:10px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;min-height:52px;text-align:left}
+.swb i{width:26px;height:26px;border-radius:50%;border:1px solid rgba(0,0,0,.2)}
+.swb[aria-pressed=true]{border-color:var(--acc);box-shadow:inset 0 0 0 1px var(--acc);background:rgba(14,124,134,.08)}
+.chk{display:flex;gap:10px;align-items:flex-start;padding:10px 0;font-size:.95rem;border-bottom:1px solid var(--line)}
+.chk input{width:20px;height:20px;margin-top:2px;accent-color:var(--acc);flex:none}
+.chk small{display:block;color:var(--mute);font-size:.82rem}
+.nav2{display:flex;justify-content:space-between;gap:10px;margin-top:20px}
+.sum{align-self:start}
+.sum h3{margin-bottom:12px}
+.lines{list-style:none;margin:0;padding:0;font-size:.92rem}
+.lines li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}
+.lines li span:first-child small{display:block;color:var(--mute);font-size:.78rem}
+.lines li span:last-child{font-weight:600;white-space:nowrap}
+.lines li.disc span:last-child{color:#2E8A4F}
+.total{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:14px}
+.total span{font-size:.9rem;color:var(--mute)}
+.total b{font:700 2rem/1 Onest,sans-serif;color:var(--acc)}
+.note{font-size:.8rem;color:var(--mute);margin-top:10px}
+.promos{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.promos .lab{margin-bottom:2px}
+.sum .btn{width:100%;margin-top:10px}
+.cart{margin-top:16px;padding-top:14px;border-top:2px solid var(--line)}
+.cart h4{font:700 1rem/1.2 Onest,sans-serif;margin:0 0 8px}
+.cart ul{list-style:none;margin:0;padding:0;font-size:.88rem}
+.cart li{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
+.cart li small{display:block;color:var(--mute);font-size:.76rem}
+.cart li button{border:1px solid var(--line);background:#fff;border-radius:8px;min-width:36px;min-height:36px;color:var(--mute)}
+.cart .empty{color:var(--mute);font-size:.86rem}
+.gtotal{display:flex;justify-content:space-between;align-items:baseline;margin-top:10px;font-weight:600}
+.gtotal b{font:700 1.3rem/1 Onest,sans-serif}
+/* тепло */
+.heat{display:grid;gap:22px}
+.hbars{display:grid;gap:12px}
+.hb{display:grid;gap:5px}
+.hb .t{display:flex;justify-content:space-between;gap:10px;font-size:.88rem}
+.hb .t b{font:600 .92rem/1.2 Onest,sans-serif}
+.hb .bar{height:16px;background:var(--bg2);border-radius:8px;overflow:hidden}
+.hb .bar i{display:block;height:100%;width:0;border-radius:8px;background:#9FB3BB;transition:width .5s}
+.hb.me .bar i{background:var(--acc)}
+.hb.me .t b{color:var(--acc)}
+.hb.old .bar i{background:#C99A6B}
+.hnote{background:rgba(14,124,134,.08);border:1px solid rgba(14,124,134,.3);border-radius:14px;padding:14px 16px;font-size:.93rem}
+.hnote b{font-family:Onest,sans-serif}
+.hpic{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:#cfdde2}
+.hpic img{width:100%;height:100%;object-fit:cover;display:block}
+/* каталог */
+.fil{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.fil button{padding:8px 16px;border:1.5px solid var(--line);border-radius:99px;background:#fff;font-weight:500;min-height:42px}
+.fil button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.cat{display:grid;gap:16px;grid-template-columns:1fr}
+.ci{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:transform .25s,box-shadow .25s}
+.ci[hidden]{display:none}
+.ci:hover{transform:translateY(-3px);box-shadow:0 18px 30px -20px rgba(16,36,44,.5)}
+.ci .pic{background:linear-gradient(180deg,#EAF2F5,#fff);display:grid;place-items:center;height:170px;padding:14px;position:relative}
+.ci .pic svg{height:100%;width:auto;max-width:100%}
+.ci .bd{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.ci .bd p{font-size:.85rem;color:var(--mute)}
+.ci .pr{display:flex;align-items:baseline;justify-content:space-between;margin-top:auto;padding-top:10px}
+.ci .pr b{font:700 1.3rem/1 Onest,sans-serif}.ci .pr span{font-size:.82rem;color:var(--mute)}
+.bdg{position:absolute;right:10px;top:10px;background:var(--warm);color:#fff;font:600 .72rem/1 Onest,sans-serif;padding:5px 9px;border-radius:99px}
+.ci .btn{margin-top:10px}
+/* замер */
+.book{display:grid;gap:22px}.book>*,.pay>*,.heat>*,.cfg>*,.ct>*{min-width:0}
+.dist{display:grid;gap:8px;grid-template-columns:repeat(2,1fr)}
+.dist button{padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;text-align:left;min-height:48px;font-size:.92rem;font-weight:500}
+.dist button small{display:block;color:var(--mute);font-weight:400;font-size:.76rem}
+.dist button[aria-pressed=true]{border-color:var(--acc);background:rgba(14,124,134,.08);box-shadow:inset 0 0 0 1px var(--acc)}
+.grp{margin:16px 0 8px;font:600 .8rem/1 Onest,sans-serif;text-transform:uppercase;letter-spacing:.1em;color:var(--mute)}
+.calh,.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.calh span{text-align:center;font-size:.72rem;color:var(--mute);padding-bottom:2px}
+.cal button,.cal i{min-height:50px;border-radius:10px}
+.cal button{border:1.5px solid var(--line);background:#fff;line-height:1.15;padding:4px 0;font-weight:600}
+.cal button small{display:block;font-weight:400;font-size:.66rem;color:var(--mute)}
+.cal button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.cal button[aria-pressed=true] small{color:#fff}
+.cal button:disabled{opacity:.4;cursor:not-allowed}
+.calm{font:600 .95rem/1 Onest,sans-serif;margin-bottom:8px}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.slots button{padding:10px 4px;border:1.5px solid var(--line);border-radius:10px;background:#fff;min-height:46px;font-size:.92rem}
+.slots button:disabled{opacity:.4;text-decoration:line-through;cursor:not-allowed}
+.slots button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.frm{display:grid;gap:12px}
+.cons{display:flex;gap:10px;align-items:flex-start;font-size:.82rem;color:var(--mute)}
+.cons input{width:20px;height:20px;accent-color:var(--acc);flex:none;margin-top:1px}
+.cons a{color:var(--acc)}
+.res{display:none;padding:18px;border-radius:14px;background:rgba(46,158,91,.1);border:1px solid #2E9E5B}
+.res.on{display:block}
+.res h3{margin-bottom:6px}.res .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.err{color:#B3261E;font-size:.85rem;min-height:1.2em}
+/* оплата */
+.pay{display:grid;gap:22px}
+.pm{display:grid;gap:12px}
+.big{font:700 2.1rem/1 Onest,sans-serif;color:var(--acc)}
+.inst .seg{margin:8px 0 16px}
+.kv{display:grid;gap:10px;grid-template-columns:1fr 1fr;margin-top:12px}
+.kv div{background:var(--bg);border-radius:12px;padding:12px}
+.kv small{display:block;color:var(--mute);font-size:.78rem}.kv b{font:700 1.15rem/1.3 Onest,sans-serif}
+dialog{border:0;border-radius:var(--r);padding:0;width:min(440px,calc(100vw - 28px));box-shadow:0 30px 70px -20px rgba(0,0,0,.5);color:var(--ink)}
+dialog::backdrop{background:rgba(16,36,44,.55)}
+.dl{padding:22px;display:grid;gap:12px}
+.tabs2{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--bg2);padding:4px;border-radius:12px}
+.tabs2 button{border:0;background:transparent;border-radius:9px;min-height:42px;font-weight:600}
+.tabs2 button[aria-pressed=true]{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.demo{background:rgba(217,130,43,.12);border:1px solid var(--warm);color:#7a4510;padding:8px 12px;border-radius:10px;font-size:.82rem}
+.qr{width:160px;height:160px;margin:6px auto;display:block}
+/* личный кабинет */
+.lk{display:grid;gap:0;padding:0;overflow:hidden}
+.lk-side{display:flex;overflow-x:auto;background:var(--bg2);border-bottom:1px solid var(--line);scrollbar-width:none}
+.lk-side::-webkit-scrollbar{display:none}
+.lk-who{display:none}
+.lk-side button{flex:none;border:0;background:transparent;padding:14px 16px;font-weight:600;font-size:.9rem;min-height:48px;position:relative;white-space:nowrap;border-bottom:3px solid transparent}
+.lk-side button[aria-selected=true]{background:#fff;border-bottom-color:var(--acc);color:var(--acc)}
+.lk-side em{font-style:normal;display:inline-grid;place-items:center;min-width:18px;height:18px;border-radius:9px;background:var(--warm);color:#fff;font-size:.7rem;margin-left:6px}
+.lk-main{padding:20px;min-width:0}
+.lk-top{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:18px}
+.lk-top small{display:block;color:var(--mute);font-size:.82rem}
+.lk-top h3{margin:2px 0}
+.ring{display:flex;align-items:center;gap:10px}
+.ring svg{width:64px;height:64px;transform:rotate(-90deg)}
+.ring b{font:700 1.3rem/1 Onest,sans-serif;color:var(--acc)}
+.stg{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.stg li{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:start;padding:12px 0;border-bottom:1px solid var(--line);position:relative}
+.stg li i{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;border:2px solid var(--line);font:700 .82rem/1 Onest,sans-serif;font-style:normal;color:var(--mute);background:#fff}
+.stg li.d i{background:var(--acc);border-color:var(--acc);color:#fff}
+.stg li.n i{border-color:var(--warm);color:var(--warm);box-shadow:0 0 0 4px rgba(217,130,43,.18)}
+.stg li span{font-weight:600}
+.stg li small{display:block;font-weight:400;color:var(--mute);font-size:.84rem}
+.stg li .tm{font-size:.8rem;color:var(--mute);white-space:nowrap;font-weight:500;text-align:right}
+.lkph{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+.lkph figure{margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.lkph img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.lkph figcaption{padding:8px 10px;font-size:.78rem;color:var(--mute);line-height:1.3}
+.lkph figcaption b{display:block;color:var(--ink);font-size:.82rem}
+.lkdoc{display:grid;gap:8px}
+.lkdoc div{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.lkdoc small{display:block;color:var(--mute);font-size:.78rem}
+.lkdoc b{font-weight:600;font-size:.94rem}
+.mywin{display:grid;gap:10px}
+.mw{display:grid;gap:10px;padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.mw h4{margin:0;font:700 1rem/1.2 Onest,sans-serif}
+.mw p{font-size:.84rem;color:var(--mute)}
+.mw .a{display:flex;gap:8px;flex-wrap:wrap}
+.remind{margin-top:14px;padding:14px 16px;border:1px dashed var(--acc);border-radius:14px;background:rgba(14,124,134,.06);font-size:.92rem}
+.remind .btn{margin-top:10px}
+.chat{display:grid;gap:8px;max-height:300px;overflow:auto;padding:4px 2px 10px}
+.msg{max-width:84%;background:var(--bg2);border-radius:14px 14px 14px 4px;padding:9px 12px;font-size:.9rem}
+.msg small{display:block;color:var(--mute);font-size:.72rem;margin-bottom:2px}
+.msg.me{justify-self:end;background:var(--acc);color:#fff;border-radius:14px 14px 4px 14px}
+.msg.me small{color:rgba(255,255,255,.8)}
+.chatf{display:flex;gap:8px;margin-top:6px}
+.chatf .inp{flex:1}
+.paytbl{width:100%;border-collapse:collapse;font-size:.9rem}
+.paytbl td,.paytbl th{padding:9px 6px;border-bottom:1px solid var(--line);text-align:left}
+.paytbl td:last-child,.paytbl th:last-child{text-align:right;white-space:nowrap}
+.paytbl .ok{color:#2E8A4F;font-weight:600}
+.bonus{margin-top:14px;padding:14px 16px;border-radius:14px;background:var(--bg2);font-size:.92rem}
+.bonus b{font-family:Onest,sans-serif;letter-spacing:.04em}
+/* работы */
+.works{display:grid;gap:16px;grid-template-columns:1fr}
+.wk{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.wk .im{aspect-ratio:4/3;background:#cfdde2;position:relative}
+.wk .im img,.wk .im .ph{width:100%;height:100%;object-fit:cover;display:block}
+.wk .bd{padding:14px 16px 16px}
+.wk h3{font-size:1.02rem}
+.wk ul{list-style:none;margin:8px 0 0;padding:0;font-size:.84rem;color:var(--mute);display:grid;gap:3px}
+.wk ul b{color:var(--ink);font-weight:600}
+.ph{display:grid;place-items:center;background:#dbe6ea}
+.ph svg{width:70%;height:70%}
+/* отзывы, faq, контакты */
+.rev{display:grid;gap:14px;grid-template-columns:1fr}
+.rv{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;position:relative}
+.rv::before{content:"“";position:absolute;right:16px;top:2px;font:700 4rem/1 Onest,sans-serif;color:var(--bg2)}
+.st{color:var(--warm);letter-spacing:2px;font-size:.95rem}
+.rv p{margin:8px 0 12px;font-size:.95rem}
+.rv small{color:var(--mute);display:block;line-height:1.4}
+.rv b{font-family:Onest,sans-serif}
+.faq{display:grid;gap:10px;max-width:820px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0 18px}
+summary{cursor:pointer;list-style:none;padding:16px 28px 16px 0;font:600 1.02rem/1.35 Onest,sans-serif;position:relative;min-height:48px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:0;top:12px;font-size:1.5rem;color:var(--acc);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 16px;color:var(--mute);font-size:.95rem}
+.ct{display:grid;gap:20px}
+.cl{display:grid;gap:12px}
+.cb{display:flex;align-items:center;gap:14px;text-decoration:none;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:14px;min-height:60px;transition:border-color .2s}
+.cb:hover{border-color:var(--acc)}
+.cb svg{width:30px;height:30px;flex:none;color:var(--acc)}
+.cb b{display:block;font:600 1rem/1.2 Onest,sans-serif}.cb small{color:var(--mute);font-size:.84rem}
+.open{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;font-weight:600}
+.open i{width:10px;height:10px;border-radius:50%;background:#aab7bd}.open.on i{background:#2E9E5B;box-shadow:0 0 0 4px rgba(46,158,91,.2)}
+.hrs{list-style:none;margin:10px 0 0;padding:0;font-size:.92rem;color:var(--mute)}
+.hrs li{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:7px 0}
+footer{background:var(--ink);color:#C5D2D8;padding:34px 0 90px;font-size:.88rem}
+footer .wr{display:grid;gap:12px}
+footer b{color:#fff}
+#policy{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);color:#C5D2D8}
+#policy summary{color:#fff;font-size:.92rem;padding:10px 24px 10px 0;min-height:44px}
+#policy p{color:#C5D2D8;font-size:.84rem}
+.fl{position:fixed;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:35;display:flex;flex-direction:column;gap:8px}
+.fl a{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 8px 20px -6px rgba(0,0,0,.45);text-decoration:none}
+.fl svg{width:23px;height:23px}
+.fl .c{background:var(--acc)}.fl .w{background:#25A055}.fl .t{background:#2A8FCF}
+.rv-in{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.rv-in.v{opacity:1;transform:none}
+#printSheet{display:none}
+@media (min-width:768px){
+ .sec{padding:84px 0}
+ .hd .tel{display:block}
+ .asm-g{grid-template-rows:none;grid-template-columns:.9fr 1.1fr;align-items:center;gap:36px;padding-top:20px;padding-bottom:20px}
+ .asm-t .tag,.asm-t .sub,.asm-t .anchor{display:flex}
+ .asm-t .sub{display:block;margin:16px 0 0;font-size:1.05rem;color:var(--mute);max-width:520px}
+ .asm-t .tag{display:inline-flex}
+ .asm .cta .btn{flex:0 0 auto;min-height:48px;padding:12px 22px;font-size:1rem}
+ .asm-v{height:100%}
+ .facts{grid-template-columns:repeat(4,1fr)}
+ .hon{grid-template-columns:repeat(2,1fr)}
+ .opts{grid-template-columns:repeat(2,1fr)}
+ .opts.o3{grid-template-columns:repeat(3,1fr)}
+ .row2{grid-template-columns:1fr 1fr}
+ .cat{grid-template-columns:repeat(2,1fr)}
+ .works,.rev{grid-template-columns:repeat(2,1fr)}
+ .dist{grid-template-columns:repeat(3,1fr)}
+ .pay,.book,.heat{grid-template-columns:1fr 1fr}
+ .ct{grid-template-columns:1fr 1fr}
+ .slots{grid-template-columns:repeat(3,1fr)}
+ .stage{height:clamp(300px,46vh,520px);height:clamp(300px,46svh,520px)}
+ .lkph{grid-template-columns:repeat(3,1fr)}
+ .fl{display:none}
+ footer{padding-bottom:34px}
+}
+@media (min-width:1200px){
+ .slots{grid-template-columns:repeat(3,1fr)}
+ .hd nav{display:flex;gap:16px}.burger{display:none}
+ .hon{grid-template-columns:repeat(3,1fr)}
+ .cfg{grid-template-columns:1.6fr 1fr;gap:28px}
+ .stagewrap{position:static;padding:0 0 6px;background:none}
+ .stage{height:520px}
+ .sum{position:sticky;top:84px}
+ .cat{grid-template-columns:repeat(3,1fr)}
+ .works{grid-template-columns:repeat(3,1fr)}
+ .rev{grid-template-columns:repeat(3,1fr)}
+ .lk{grid-template-columns:230px 1fr}
+ .lk-side{flex-direction:column;border-bottom:0;border-right:1px solid var(--line);overflow:visible}
+ .lk-side button{text-align:left;border-bottom:0;border-left:3px solid transparent;border-radius:0}
+ .lk-side button[aria-selected=true]{border-left-color:var(--acc)}
+ .lk-who{display:flex;gap:10px;align-items:center;padding:16px;font-weight:600;border-bottom:1px solid var(--line)}
+ .lk-who i{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--acc);color:#fff;font:700 .9rem/1 Onest,sans-serif;font-style:normal}
+ .lk-who small{display:block;color:var(--mute);font-weight:400;font-size:.76rem}
+}
+@media (min-width:1200px) and (max-width:1320px){.hd nav{gap:11px}.hd nav a{font-size:.84rem}.hd .tel{display:none}}
+@media (min-width:768px) and (max-width:1199px){.hd nav{display:none}.burger{display:grid}.hd.open nav{display:flex}}
+@media (max-height:540px) and (orientation:landscape){
+ .asm{height:auto}.asm-in{position:static;height:auto;min-height:0}.asm-v{height:300px}.asm-g{display:block}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv-in{opacity:1;transform:none}}
+@media print{
+ @page{margin:14mm}
+ body>*:not(#printSheet){display:none!important}
+ body{background:#fff;color:#000;font-size:11pt}
+ #printSheet{display:block!important}
+ #printSheet h2{font-size:18pt;margin:0 0 4pt}
+ #printSheet h3{font-size:12pt;margin:12pt 0 4pt}
+ #printSheet table{width:100%;border-collapse:collapse;margin:6pt 0}
+ #printSheet td,#printSheet th{border-bottom:1px solid #999;padding:4pt 3pt;text-align:left;font-size:10pt}
+ #printSheet td:last-child,#printSheet th:last-child{text-align:right;white-space:nowrap}
+ #printSheet tr.tt td{font-weight:700;font-size:11pt;border-top:2px solid #000}
+ #printSheet .pi{display:flex;gap:12pt;align-items:flex-start;margin-top:8pt}
+ #printSheet .pi svg,#printSheet .pi img{width:150pt;height:auto;max-height:150pt;flex:none;border:1px solid #ccc}
+ #printSheet .pl{width:260pt;max-height:190pt;object-fit:cover}
+ #printSheet .sm{color:#555;font-size:9pt}
+}
+</style>
+</head>
+<body>
+<header class="hd" id="hd"><div class="wr">
+ <a class="logo" href="#top" aria-label="Рамус — на главную"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="6" fill="#0E7C86"/><rect x="7" y="7" width="18" height="18" rx="2" fill="#fff"/><path d="M16 7v18M7 16h18" stroke="#0E7C86" stroke-width="2"/></svg>Рамус</a>
+ <nav id="nav" aria-label="Разделы сайта"><a href="#config">Окно в 3D</a><a href="#teplo">Тепло</a><a href="#katalog">Каталог</a><a href="#zamer">Замер</a><a href="#oplata">Рассрочка</a><a href="#kabinet">Кабинет</a><a href="#raboty">Работы</a><a href="#faq">Вопросы</a><a href="#kontakty">Контакты</a></nav>
+ <a class="tel" href="tel:+77777777777">+7 (777) 777-77-77</a>
+ <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false"><i></i></button>
+</div></header>
+<main>
+<section class="asm" id="top" aria-label="Окно собирается при прокрутке"><div class="asm-in"><div class="wr asm-g">
+ <div class="asm-t">
+  <span class="hero-tag tag" style="display:none"><i></i>Замеры сегодня и завтра по всему Челябинску</span>
+  <h1>Пластиковые окна в Челябинске. <em>Цена под ключ видна до замера</em></h1>
+  <p class="sub">Замер завтра, окна через 3–5 дней, монтаж за день. Берём и одно окно. Соберите своё окно в 3D и сразу увидите смету по строкам.</p>
+  <div class="cta"><a class="btn" href="#config">Собрать окно в 3D</a><a class="btn line" href="#zamer">Записаться на замер</a></div>
+  <div class="anchor"><strong class="num" id="anchorPrice">16 900 ₽</strong><span>двустворчатое 1300×1400, KBE Expert 70, 2-камерный стеклопакет: окно, монтаж, подоконник, отлив и москитная сетка</span></div>
+ </div>
+ <div class="asm-v" id="asmV">
+  <canvas id="hcv" role="img" aria-label="Трёхмерная модель окна: рама, импост, створки, стеклопакет и фурнитура собираются по мере прокрутки страницы"></canvas>
+  <div class="hfb" id="hfb"></div>
+  <div class="asm-cap" aria-live="polite"><b id="capN">1</b><div><span id="capT">Рама ПВХ</span><small id="capS">5 камер, сталь внутри</small></div></div>
+  <div class="asm-hint">Листайте вниз: окно собирается</div>
+  <ol class="asm-steps" id="asmSteps"></ol>
+  <div class="asm-bar" aria-hidden="true"><i id="asmBar"></i></div>
+ </div>
+</div></div></section>
+
+<section class="sec" style="padding-top:34px;padding-bottom:20px"><div class="wr"><div class="facts">
+ <div class="fact"><b>1 день</b><span>монтаж одного окна, мусор убираем</span></div>
+ <div class="fact"><b>3–5 дней</b><span>изготовление после замера</span></div>
+ <div class="fact"><b>5 лет</b><span>гарантия на изделие и монтаж, условия в договоре</span></div>
+ <div class="fact"><b>0%</b><span>рассрочка на 3–6 месяцев</span></div>
+</div></div></section>
+
+<section class="sec" id="chestno"><div class="wr">
+ <div class="sh"><span class="kick"><b>1</b>Честная цена</span><h2>Состав цены виден до замера</h2><p class="lead">В нише привыкли к скидкам «до 63%» и таймерам. Мы показываем формулу и строки сметы. Если проём окажется другим, пересчитаем по той же формуле и покажем, что изменилось.</p></div>
+ <div class="hon">
+  <article class="hc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18M3 12h18"/></svg></i><h3>Цена по строкам</h3><p>Профиль, стеклопакет, фурнитура, монтаж, подоконник, отлив, сетка. Каждая строка видна справа от 3D-окна.</p></article>
+  <article class="hc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></i><h3>Запись на дату и время</h3><p>Выбираете район, день и слот на два часа. Мастер звонит за 30 минут. Событие добавляется в календарь телефона.</p></article>
+  <article class="hc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M10 21v-6h4v6"/></svg></i><h3>Работы с подписями</h3><p>У каждого объекта: район, размер, профиль, срок и итоговая цена. Без обезличенных фото.</p></article>
+  <article class="hc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 8l7-5 7 5"/><circle cx="12" cy="14" r="3"/></svg></i><h3>Малые заказы</h3><p>Одно окно, замена стеклопакета, регулировка фурнитуры от 1 500 ₽. Выезжаем в Копейск, Сосновский и Аргаяшский районы.</p></article>
+  <article class="hc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></i><h3>Гарантия одной строкой</h3><p>5 лет на изделие и монтаж. Регулировка фурнитуры в первый год бесплатно. Условия в договоре, без трёх разных сроков.</p></article>
+  <article class="hc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></i><h3>Кабинет клиента</h3><p>После договора: этапы, фото с производства и монтажа, документы, чат с менеджером и график платежей.</p></article>
+ </div>
+ <div class="formula"><b>Как считается окно</b> (демо-ставки)<code>Площадь S = max(ширина × высота, 1 м²)
+Окно = S × (ставка профиля + надбавка стеклопакета) + фурнитура створок
+Монтаж = max(S × 1 600, 2 800)  ·  Подоконник = ширина × 550 или 700 ₽/пог. м
+Отлив = ширина × 350  ·  Откосы = (ширина + 2 × высота) × 900 или 1 100  ·  Сетка = 800 × открывающиеся створки
+Ламинация: +15% к ставке профиля  ·  Скидки по промокодам: не больше 10%</code></div>
+</div></section>
+
+<section class="sec alt" id="config"><div class="wr">
+ <div class="sh"><span class="kick"><b>2</b>Окно в 3D</span><h2>Соберите своё окно и увидите цену</h2><p class="lead">Тяните окно, чтобы повернуть его. Нажмите на створку, чтобы сменить тип открывания. Кнопки под окном: взгляд снаружи и изнутри, день и зима, открывание и разрез профиля. Смета справа пересчитывается сразу.</p></div>
+ <div class="cfg">
+  <div class="cfgL">
+   <div class="stagewrap" id="stagewrap">
+    <div class="stage" id="stage">
+     <canvas id="cv" tabindex="0" role="img" aria-label="Интерактивная 3D-модель окна. Стрелки поворачивают окно, плюс и минус приближают."></canvas>
+     <div class="fb" id="fb" role="img" aria-label="Схема окна: нажмите на створку, чтобы сменить тип открывания"></div>
+     <div class="hudp" id="hudSize">1300 × 1400 мм</div>
+     <div class="hudt"><small>Итого под ключ</small><span class="num" id="hudTotal">0 ₽</span></div>
+     <div class="zoom gl-only"><button type="button" id="zin" aria-label="Приблизить">+</button><button type="button" id="zout" aria-label="Отдалить">−</button><button type="button" id="zrst" aria-label="Сбросить вид">⟲</button></div>
+     <div class="pins" id="pins" aria-hidden="true"></div>
+     <div class="toast" id="toast" role="status"></div>
+     <div class="loadmsg" id="loadMsg">Загружаем 3D…</div>
+    </div>
+    <div class="chips gl-only" id="chips" role="group" aria-label="Режимы просмотра">
+     <div class="cg" role="group" aria-label="Сторона"><button type="button" data-side="0" aria-pressed="true">Снаружи</button><button type="button" data-side="1" aria-pressed="false">Изнутри</button></div>
+     <div class="cg" role="group" aria-label="Время года"><button type="button" data-sea="0" aria-pressed="true">День</button><button type="button" data-sea="1" aria-pressed="false">Зима</button></div>
+     <div class="cg" role="group" aria-label="Открывание"><button type="button" data-open="closed" aria-pressed="true">Закрыто</button><button type="button" data-open="tilt" aria-pressed="false">Откидное</button><button type="button" data-open="turn" aria-pressed="false">Поворотное</button></div>
+     <div class="cg" role="group" aria-label="Разрез"><button type="button" id="secBtn" aria-pressed="false">Разрез профиля</button><button type="button" id="secHl" aria-pressed="false" hidden>Подсветить камеры</button></div>
+    </div>
+   </div>
+   <p class="sechint gl-only" id="sechint">Подсказка: зимой смотрите изнутри. Однокамерный стеклопакет покрывается инеем, энергосберегающий остаётся чистым.</p>
+   <div class="secinfo" id="secinfo"><h3>Профиль в разрезе</h3><ul id="secList"></ul><div class="secsvg" id="secSvg"></div></div>
+   <div class="steps" id="steps" role="tablist" aria-label="Шаги конфигуратора"></div>
+   <div class="card">
+    <div class="pane on" data-p="0"><h3>Тип проёма</h3><p>Выберите похожий проём, дальше всё можно подправить.</p><div class="opts o3" id="presets"></div></div>
+    <div class="pane" data-p="1"><h3>Размеры и число створок</h3><p>Ширина 400–2400 мм, высота 400–2200 мм. Нестандартные размеры считаем по той же формуле.</p>
+     <div class="row2">
+      <div class="fld"><label for="wr">Ширина, мм</label><div class="val"><input type="range" id="wr" min="400" max="2400" step="10" aria-label="Ширина, ползунок"><input type="number" id="wn" min="400" max="2400" step="10" aria-label="Ширина в миллиметрах"></div></div>
+      <div class="fld"><label for="hr">Высота, мм</label><div class="val"><input type="range" id="hr" min="400" max="2200" step="10" aria-label="Высота, ползунок"><input type="number" id="hn" min="400" max="2200" step="10" aria-label="Высота в миллиметрах"></div></div>
+     </div>
+     <div class="lab" style="margin-top:18px">Число створок</div><div class="seg" id="nseg"></div>
+     <p class="note" id="areaNote"></p></div>
+    <div class="pane" data-p="2"><h3>Створки и открывание</h3><p>Выберите тип для каждой створки здесь или нажимайте прямо на окно. Глухая не открывается, поворотная открывается как дверь, поворотно-откидная ещё и проветривает щелью.</p><div class="sashsel" id="sashsel"></div></div>
+    <div class="pane" data-p="3"><h3>Профиль и стеклопакет</h3><p>Профиль задаёт толщину и число камер, стеклопакет задаёт тепло. Выбранное сразу видно в 3D и в разрезе.</p><div class="lab">Профиль</div><div class="opts" id="profs"></div><div class="lab" style="margin-top:18px">Стеклопакет</div><div class="opts o3" id="glass"></div></div>
+    <div class="pane" data-p="4"><h3>Цвет</h3><p>Ламинация добавляет 15% к стоимости профиля. Белый цвет без доплаты.</p><div class="sw" id="cols"></div></div>
+    <div class="pane" data-p="5"><h3>Подоконник, откосы и работы</h3><p>Отметьте, что нужно. Цену каждой позиции видно справа, а подоконник, отлив, откосы и сетку видно на 3D-окне.</p>
+     <div class="row2"><div class="fld"><label for="sill">Подоконник ПВХ</label><select class="sel" id="sill"><option value="0">Не нужен</option><option value="200">200 мм, 550 ₽/пог. м</option><option value="300">300 мм, 700 ₽/пог. м</option></select></div>
+     <div class="fld"><label for="slope">Откосы</label><select class="sel" id="slope"><option value="0">Не нужны</option><option value="1">Сэндвич-панель, 900 ₽/пог. м</option><option value="2">Штукатурка, 1 100 ₽/пог. м</option></select></div></div>
+     <label class="chk"><input type="checkbox" id="ebb"><span>Отлив<small>350 ₽ за погонный метр ширины</small></span></label>
+     <label class="chk"><input type="checkbox" id="mesh"><span>Москитная сетка<small>800 ₽ на каждую открывающуюся створку</small></span></label>
+     <label class="chk"><input type="checkbox" id="mount"><span>Монтаж<small>от 2 800 ₽ или 1 600 ₽ за м² при площади больше 1,75 м²</small></span></label>
+     <label class="chk"><input type="checkbox" id="dem"><span>Демонтаж старого окна<small>600 ₽ за окно</small></span></label>
+     <label class="chk"><input type="checkbox" id="trash"><span>Вывоз мусора<small>400 ₽</small></span></label>
+     <div class="row2" style="margin-top:12px"><div class="fld"><label for="fl">Этаж</label><input class="inp" type="number" id="fl" min="1" max="25" value="5"></div>
+     <label class="chk" style="border:0;align-self:end"><input type="checkbox" id="lift"><span>В доме есть лифт<small>подъём без лифта: 150 ₽ за этаж с 3-го</small></span></label></div></div>
+    <div class="nav2"><button class="btn line sm" type="button" id="prev">Назад</button><button class="btn sm" type="button" id="next">Дальше</button></div>
+   </div>
+  </div>
+  <aside class="card sum" aria-label="Смета"><h3>Смета окна</h3><ul class="lines" id="lines"></ul>
+   <div class="promos"><div class="lab">Автопромокоды</div>
+    <label class="chk"><input type="checkbox" class="pr" data-v="5"><span>Первое окно у нас, −5%<small>для новых клиентов</small></span></label>
+    <label class="chk"><input type="checkbox" class="pr" data-v="7"><span>Пенсионерам, −7%<small>документ покажете при замере</small></span></label>
+    <label class="chk"><input type="checkbox" class="pr" data-v="3"><span>Приведи соседа, −3%<small>если сосед оформил заказ по вашей рекомендации</small></span></label>
+    <p class="note">Скидки суммируются, но не больше 10% от сметы.</p></div>
+   <div class="total"><span>Итого под ключ</span><b class="num" id="total">0 ₽</b></div>
+   <p class="note">Предварительный расчёт, итог фиксируется в договоре после замера.</p>
+   <button class="btn" type="button" id="addCart">Добавить окно в смету квартиры</button>
+   <button class="btn line" type="button" id="toPdf">Сохранить смету в PDF</button>
+   <a class="btn line" href="#zamer" id="toBook">Записаться на замер с этим расчётом</a>
+   <div class="cart" id="cart"><h4>Смета квартиры</h4><ul id="cartList"></ul><div class="gtotal" id="gtot" hidden><span>Всего по смете</span><b class="num" id="gsum">0 ₽</b></div></div>
+  </aside>
+ </div>
+</div></section>
+
+<section class="sec" id="teplo"><div class="wr">
+ <div class="sh"><span class="kick"><b>3</b>Тепло</span><h2>Сколько тепла уходит через ваше окно</h2><p class="lead">Сравнение по вашему размеру из 3D-конфигуратора. Значения сопротивления теплопередаче условные, для демо: перед работой с реальным клиентом их заменяют паспортными данными производителя.</p></div>
+ <div class="heat">
+  <div>
+   <div class="fld" style="margin-bottom:18px"><label for="tout">Температура на улице: <b class="num" id="toutV">−34</b> °C</label><div class="val"><input type="range" id="tout" min="-40" max="-5" step="1" value="-34" aria-label="Температура на улице"></div><p class="note">Расчётная для Челябинска: −34 °C. Внутри +20 °C. Потери Q = S × ΔT / R.</p></div>
+   <div class="hbars" id="hbars"></div>
+   <div class="hnote" id="hnote" style="margin-top:18px"></div>
+   <p style="margin-top:14px"><button class="btn sm" type="button" id="toWinter">Посмотреть своё окно зимой в 3D</button></p>
+  </div>
+  <div class="hpic"><img src="img/1618072538608-49c44ba3d8ae.jpg" width="1000" height="1500" loading="lazy" alt="Белое пластиковое окно, за ним зимний вид"></div>
+ </div>
+</div></section>
+
+<section class="sec alt" id="katalog"><div class="wr">
+ <div class="sh"><span class="kick"><b>4</b>Каталог окон</span><h2>Типовые окна с ценой под ключ</h2><p class="lead">Цена включает окно, монтаж, подоконник, отлив и москитную сетку, без откосов. Нажмите «Открыть в 3D», чтобы подправить размер или профиль.</p></div>
+ <div class="fil" id="fil" role="group" aria-label="Фильтр каталога"></div>
+ <div class="cat" id="cat"></div>
+</div></section>
+
+<section class="sec" id="zamer"><div class="wr">
+ <div class="sh"><span class="kick"><b>5</b>Онлайн-запись замера</span><h2>Выберите район, день и время</h2><p class="lead">Замер бесплатный. Мастер приедет в выбранные два часа и позвонит за 30 минут. За городом выезд оплачивается и засчитывается в стоимость заказа. После записи можно добавить визит в календарь телефона.</p></div>
+ <div class="book">
+  <div class="card"><div class="grp" style="margin-top:0">Район</div><div class="dist" id="dist"></div>
+   <div class="grp">День</div><div class="calm" id="calm"></div><div class="calh" aria-hidden="true"><span>пн</span><span>вт</span><span>ср</span><span>чт</span><span>пт</span><span>сб</span><span>вс</span></div><div class="cal" id="cal"></div>
+   <div class="grp">Время</div><div class="slots" id="slots"></div></div>
+  <div class="card"><form class="frm" id="bform" novalidate>
+   <h3>Контакты и заявка</h3>
+   <div><label class="lab" for="bn">Имя</label><input class="inp" id="bn" autocomplete="given-name" placeholder="Как к вам обращаться"></div>
+   <div><label class="lab" for="bp">Телефон</label><input class="inp" id="bp" type="tel" autocomplete="tel" placeholder="+7"></div>
+   <div><label class="lab" for="ba">Адрес</label><input class="inp" id="ba" autocomplete="street-address" placeholder="Улица, дом, квартира"></div>
+   <div class="note" id="bsum">Окно из конфигуратора: пока не собрано, замерщик посчитает на месте.</div>
+   <label class="cons"><input type="checkbox" id="bc"><span>Согласен на обработку персональных данных по <a href="#policy">политике конфиденциальности</a></span></label>
+   <div class="err" id="berr" role="alert"></div>
+   <button class="btn" type="submit">Записаться на замер</button>
+  </form>
+  <div class="res" id="bres" role="status"><h3>Заявка собрана</h3><p id="bt"></p><div class="cta"><button class="btn sm" type="button" id="bics">Добавить в календарь</button><a class="btn line sm" id="bwa" href="https://wa.me/77777777777" target="_blank" rel="noopener">Подтвердить в WhatsApp</a><a class="btn line sm" id="btg" href="https://t.me/" target="_blank" rel="noopener">Написать в Telegram</a></div><p class="note">Демо: заявка никуда не отправляется, пока вы не нажмёте кнопку мессенджера.</p></div></div>
+ </div>
+</div></section>
+
+<section class="sec alt" id="oplata"><div class="wr">
+ <div class="sh"><span class="kick"><b>6</b>Предоплата и рассрочка</span><h2>Платите частями, без переплаты</h2><p class="lead">Предоплата 10% засчитывается в стоимость заказа. Остаток после монтажа и подписания акта. Или рассрочка 0% на 3–6 месяцев.</p></div>
+ <div class="pay">
+  <div class="card pm"><h3>Предоплата 10%</h3><div class="big num" id="prepay">0 ₽</div><p class="note" id="prepNote">Собираете окно в конфигураторе, сумма подставится сама.</p><p style="font-size:.92rem;color:var(--mute)">Оплата картой или через СБП. Предоплата фиксирует цену в договоре и запускает изготовление. При отказе клиента предоплата не возвращается, условия вы увидите в договоре заранее.</p><button class="btn" type="button" id="openPay">Внести предоплату (демо)</button></div>
+  <div class="card inst"><h3>Рассрочка 0%</h3>
+   <label class="lab" for="iamt">Сумма заказа, ₽</label><input class="inp" id="iamt" type="number" min="1000" step="100" value="16900">
+   <div class="lab" style="margin-top:14px">Первый взнос</div><div class="seg" id="ipre"></div>
+   <div class="lab">Срок, месяцев</div><div class="seg" id="imon"></div>
+   <div class="kv"><div><small>Платёж в месяц</small><b class="num" id="imo">0 ₽</b></div><div><small>Первый взнос</small><b class="num" id="ipv">0 ₽</b></div></div>
+   <p class="note">Демонстрационный расчёт без процентов и комиссий. Условия одобрения и график платежей определяются договором.</p></div>
+ </div>
+</div></section>
+<dialog id="payd" aria-labelledby="pdt"><div class="dl">
+ <h3 id="pdt">Предоплата</h3><div class="demo">Демо-окно: платёж не проводится, данные никуда не уходят и не сохраняются.</div>
+ <div class="tabs2" role="group" aria-label="Способ оплаты"><button type="button" aria-pressed="true" data-m="card">Картой</button><button type="button" aria-pressed="false" data-m="sbp">СБП</button></div>
+ <div id="pcard" class="frm"><div><label class="lab" for="pc1">Номер карты</label><input class="inp" id="pc1" inputmode="numeric" autocomplete="off" placeholder="Демо: поле можно оставить пустым"></div></div>
+ <div id="psbp" hidden><svg class="qr" viewBox="0 0 21 21" aria-label="Образец QR-кода для СБП"><rect width="21" height="21" fill="#fff"/><g fill="#10242C" id="qrg"></g></svg><p class="note" style="text-align:center">Образец QR-кода. Настоящий код банка клиента подставляется при подключении эквайринга.</p></div>
+ <div class="res" id="pres" role="status"><h3>Демо-оплата прошла</h3><p>В рабочей версии здесь подтверждение банка и чек самозанятого.</p></div>
+ <button class="btn" type="button" id="doPay">Оплатить</button><button class="btn line" type="button" id="closePay">Закрыть</button>
+</div></dialog>
+
+<section class="sec" id="kabinet"><div class="wr">
+ <div class="sh"><span class="kick"><b>7</b>Личный кабинет клиента</span><h2>Договор, этапы и фотоотчёт в одном месте</h2><p class="lead">После договора вы следите за заказом с телефона: что уже сделано, что дальше, где документы, как связаться с менеджером. Ниже рабочий образец, вкладки можно нажимать. Данные вымышленные.</p></div>
+ <div class="card lk">
+  <div class="lk-side" id="lkTabs" role="tablist" aria-label="Разделы кабинета" aria-orientation="vertical">
+   <div class="lk-who"><i>ИК</i><div>Ирина К.<small>Заказ №РМ-2026-0143</small></div></div>
+   <button type="button" role="tab" id="tb1" aria-controls="tp1" aria-selected="true">Этапы</button>
+   <button type="button" role="tab" id="tb2" aria-controls="tp2" aria-selected="false" tabindex="-1">Фотоотчёт</button>
+   <button type="button" role="tab" id="tb3" aria-controls="tp3" aria-selected="false" tabindex="-1">Документы</button>
+   <button type="button" role="tab" id="tb4" aria-controls="tp4" aria-selected="false" tabindex="-1">Мои окна</button>
+   <button type="button" role="tab" id="tb5" aria-controls="tp5" aria-selected="false" tabindex="-1">Чат<em id="unread">2</em></button>
+   <button type="button" role="tab" id="tb6" aria-controls="tp6" aria-selected="false" tabindex="-1">Платежи и бонусы</button>
+  </div>
+  <div class="lk-main">
+   <div class="lk-top"><div><small>3 окна, KBE Expert 70 (образец)</small><h3>Заказ №РМ-2026-0143 · г. Челябинск, Ваш адрес</h3><small>Менеджер: Максим · гарантия 5 лет на изделие и монтаж</small></div>
+    <div class="ring"><svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15.9" fill="none" stroke="#D2DDE2" stroke-width="3"/><circle id="ringC" cx="18" cy="18" r="15.9" fill="none" stroke="#0E7C86" stroke-width="3" stroke-dasharray="0 100" stroke-linecap="round"/></svg><div><b id="ringT">50%</b><br><small>готовность</small></div></div></div>
+   <div role="tabpanel" id="tp1" aria-labelledby="tb1"><ol class="stg" id="stg"></ol></div>
+   <div role="tabpanel" id="tp2" aria-labelledby="tb2" hidden><div class="lkph" id="lkPh"></div><p class="note">Фото-образцы. В рабочей версии здесь снимки с вашего заказа.</p></div>
+   <div role="tabpanel" id="tp3" aria-labelledby="tb3" hidden><div class="lkdoc" id="lkDoc"></div></div>
+   <div role="tabpanel" id="tp4" aria-labelledby="tb4" hidden><div class="mywin" id="myWin"></div>
+    <div class="remind"><b>Регулировка фурнитуры через 12 месяцев</b><br>Напомним заранее и приедем бесплатно в течение недели.<br><button class="btn sm line" type="button" id="remBtn">Добавить напоминание в календарь</button></div></div>
+   <div role="tabpanel" id="tp5" aria-labelledby="tb5" hidden>
+    <div class="chat" id="chat" aria-live="polite">
+     <div class="msg"><small>Максим, менеджер · 09:05</small>Доброе утро! Окна из цеха выйдут завтра. Привезём и поставим послезавтра с 9:00.</div>
+     <div class="msg me"><small>Вы · 09:18</small>Отлично. Мусор вы вывозите, как в договоре?</div>
+     <div class="msg"><small>Максим, менеджер · 09:21</small>Да, вывоз мусора включён. Звонок мастера за 30 минут до приезда.</div>
+    </div>
+    <form class="chatf" id="chatF"><input class="inp" id="chatI" placeholder="Написать менеджеру…" aria-label="Сообщение менеджеру" maxlength="200" autocomplete="off"><button class="btn sm" type="submit">Отправить</button></form>
+    <p class="note">Образец чата: сообщения никуда не отправляются.</p></div>
+   <div role="tabpanel" id="tp6" aria-labelledby="tb6" hidden>
+    <table class="paytbl"><thead><tr><th>Платёж</th><th>Дата</th><th>Сумма</th></tr></thead><tbody id="payRows"></tbody></table>
+    <div class="bonus">Промокод «Приведи соседа»: <b>РАМУС-0143</b>. Сосед получает −3% на заказ, вы получаете −3% на следующую регулировку или москитку.</div></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="sec alt" id="raboty"><div class="wr">
+ <div class="sh"><span class="kick"><b>8</b>Наши работы</span><h2>Что и где ставили</h2><p class="lead">У каждой работы указаны район, размер, профиль, срок и цена. Примеры вымышленные, в рабочей версии здесь ваши объекты.</p></div>
+ <div class="works" id="works"></div>
+</div></section>
+
+<section class="sec" id="otzyvy"><div class="wr">
+ <div class="sh"><span class="kick"><b>9</b>Отзывы</span><h2>Что говорят клиенты</h2><p class="lead">Образцы отзывов с районом и профилем. В рабочей версии заменяются реальными.</p></div>
+ <div class="rev">
+  <article class="rv rv-in"><div class="st" aria-label="Оценка 5 из 5">★★★★★</div><p>Назвали цену по телефону и в договоре не изменили ни рубля. Два окна поставили за один день, мусор вынесли.</p><b>Ирина</b><small>Курчатовский район, 2 окна KBE Expert 70</small></article>
+  <article class="rv rv-in"><div class="st" aria-label="Оценка 5 из 5">★★★★★</div><p>Нужно было поменять одно кухонное окно, многие отказывались. Здесь приехали на следующий день и сделали за три часа.</p><b>Сергей</b><small>Ленинский район, 1 окно, REHAU Grazio 70</small></article>
+  <article class="rv rv-in"><div class="st" aria-label="Оценка 5 из 5">★★★★★</div><p>Собрали окно на сайте в 3D, увидели смету по строкам и записались на замер. На месте цена совпала, замерщик ничего не накручивал.</p><b>Алексей</b><small>Советский район, трёхстворчатое, VEKA Softline 70</small></article>
+  <article class="rv rv-in"><div class="st" aria-label="Оценка 4 из 5">★★★★☆</div><p>Дом в Сосновском районе, выезд оплатили отдельно, потом его засчитали в заказ. Единственное, окна ждали шесть дней, а не пять.</p><b>Марина</b><small>Сосновский район, 4 окна, EXPROF ProWIN 58</small></article>
+  <article class="rv rv-in"><div class="st" aria-label="Оценка 5 из 5">★★★★★</div><p>Брали в рассрочку на пять месяцев без процентов. Платёж в месяц посчитали заранее, всё как обещали. Фото с производства приходили в кабинет.</p><b>Татьяна</b><small>Тракторозаводский район, 3 окна, KBE Expert 70</small></article>
+  <article class="rv rv-in"><div class="st" aria-label="Оценка 5 из 5">★★★★★</div><p>Через год позвонил по регулировке фурнитуры, приехали бесплатно в течение недели. Это дорогого стоит.</p><b>Андрей</b><small>Калининский район, 2 окна, VEKA Softline 70</small></article>
+ </div>
+</div></section>
+
+<section class="sec alt" id="faq"><div class="wr">
+ <div class="sh"><span class="kick"><b>10</b>Вопросы</span><h2>Частые вопросы</h2></div>
+ <div class="faq">
+  <details><summary>Сколько стоит замер и когда приедет мастер?</summary><p>Замер по Челябинску бесплатный. Записаться можно на ближайший день, слоты по два часа с 9:00 до 21:00. За городом выезд оплачивается и засчитывается в стоимость заказа.</p></details>
+  <details><summary>Меняется ли цена после замера?</summary><p>Цена из конфигуратора предварительная. Если размеры и состав совпали, цена в договоре та же. Если проём оказался другим, мы пересчитаем по той же формуле и покажем строки.</p></details>
+  <details><summary>Берёте ли вы заказ на одно окно?</summary><p>Да, малые заказы мы берём так же, как большие. Замена стеклопакета и регулировка фурнитуры тоже есть, от 1 500 ₽.</p></details>
+  <details><summary>Как долго делают окна и сколько идёт монтаж?</summary><p>Изготовление 3–5 рабочих дней, для сложных конструкций до 7. Монтаж одного окна занимает день, мусор вывозим по желанию за 400 ₽.</p></details>
+  <details><summary>Что входит в гарантию?</summary><p>Гарантия 5 лет на изделие и монтаж. Условия одной строкой в договоре, регулировку фурнитуры в первый год делаем бесплатно.</p></details>
+  <details><summary>Можно ли поменять окна зимой?</summary><p>Можно. Проём открыт примерно час на окно, мастер ставит окна по одному и закрывает проём плёнкой. Для зимы подойдут профили с пятью камерами и энергосберегающий стеклопакет.</p></details>
+  <details><summary>Почему на 3D-окне зимой иней, а цена на сайте не меняется?</summary><p>Иней показывает, как ведёт себя внутреннее стекло при сильном морозе: у однокамерного стеклопакета оно холоднее, у энергосберегающего теплее. Это наглядная модель, а не прогноз для вашей квартиры. Цена зависит только от выбранных позиций.</p></details>
+  <details><summary>Как работает рассрочка?</summary><p>Рассрочка 0% на 3–6 месяцев без переплаты. Первый взнос от 0 до 30%, платёж в месяц считается на странице. Окончательные условия в договоре.</p></details>
+  <details><summary>Что будет в личном кабинете?</summary><p>Этапы заказа, фото замера, производства и монтажа, документы (договор, смета, чек, акт, гарантийный талон, паспорт изделий), чат с менеджером и график платежей.</p></details>
+ </div>
+</div></section>
+
+<section class="sec" id="kontakty"><div class="wr">
+ <div class="sh"><span class="kick"><b>11</b>Контакты</span><h2>Связаться удобным способом</h2></div>
+ <div class="ct">
+  <div class="cl">
+   <a class="cb" href="tel:+77777777777"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><b>+7 (777) 777-77-77</b><small>Позвонить, ежедневно 9:00–20:00</small></span></a>
+   <a class="cb" href="https://wa.me/77777777777?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BD%D1%83%D0%B6%D0%BD%D1%8B%20%D0%BE%D0%BA%D0%BD%D0%B0%20%D0%BE%D1%82%20%D0%A0%D0%B0%D0%BC%D1%83%D1%81" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><span><b>WhatsApp</b><small>Напишите размеры, ответим с расчётом</small></span></a>
+   <a class="cb" href="https://t.me/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 3 2 11l6 2.5L10 20l3.5-4 5 3.5z"/></svg><span><b>Telegram</b><small>Запасной канал, отвечаем в тот же день</small></span></a>
+  </div>
+  <div class="card"><h3>Адрес и часы</h3><p style="margin-top:8px">г. Челябинск, Ваш адрес</p><p class="open" id="openNow" style="margin-top:8px"><i></i><span>Проверяем время</span></p>
+   <ul class="hrs"><li><span>Офис и звонки</span><span>9:00–20:00, ежедневно</span></li><li><span>Выезд на замер</span><span>до 21:00</span></li><li><span>Монтаж</span><span>8:00–19:00</span></li></ul>
+   <p class="note">Работаем по Челябинску и пригородам: Копейск, Сосновский, Аргаяшский районы.</p></div>
+ </div>
+</div></section>
+</main>
+<footer><div class="wr">
+ <div><b>Рамус — окна под ключ</b> · г. Челябинск, Ваш адрес</div>
+ <div>Все данные на сайте — образец. Цены демонстрационные.</div>
+ <details id="policy"><summary>Политика обработки персональных данных</summary><p>Образец. Мы используем имя, телефон и адрес только для записи на замер и связи по заказу, не передаём их третьим лицам. Согласие можно отозвать, написав нам. Рабочий текст политики подготавливается для каждого клиента отдельно.</p></details>
+</div></footer>
+<div class="fl" aria-label="Быстрая связь"><a class="c" href="tel:+77777777777" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a><a class="w" href="https://wa.me/77777777777" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg></a><a class="t" href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 3 2 11l6 2.5L10 20l3.5-4 5 3.5z"/></svg></a></div>
+<div id="printSheet" aria-hidden="true"></div>
+<script src="three.min.js"></script>
+<script>
+(function(){
+'use strict';
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var fmt=function(n){return Math.round(n).toLocaleString('ru-RU')+' ₽'};
+var r100=function(x){return Math.round(x/100)*100};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var WA='https://wa.me/77777777777';
+var TG='https://t.me/';
+function waLink(t){return WA+'?text='+encodeURIComponent(t)}
+function pl(n,a,b,c){var m=n%100,k=n%10;if(m>10&&m<20)return c;if(k===1)return a;if(k>1&&k<5)return b;return c}
+/* ---------- данные и расчёт (формула из ТЗ, демо-ставки) ---------- */
+var PROF=[{n:'EXPROF ProWIN 58',r:3600,c:3,d:58,t:'Эконом',R:.42},{n:'KBE Expert 70',r:4400,c:5,d:70,t:'Стандарт',R:.52},{n:'REHAU Grazio 70',r:5300,c:5,d:70,t:'Надёжный',R:.56},{n:'VEKA Softline 70',r:5700,c:5,d:70,t:'Тихий',R:.58},{n:'VEKA Softline 82',r:8200,c:6,d:82,t:'Премиум',R:.62}];
+var GL=[{n:'1-камерный',s:0,t:'2 стекла',mm:24,np:2,R:.08},{n:'2-камерный',s:600,t:'3 стекла',mm:32,np:3,R:.16},{n:'2-камерный энергосберегающий',s:1500,t:'3 стекла, аргон',mm:40,np:3,R:.18}];
+var COL=[{n:'Белый',k:0,c:'#F6F8F8'},{n:'Золотой дуб',k:.15,c:'#B07A3B'},{n:'Антрацит',k:.15,c:'#3A4046'}];
+var FUR={f:0,t:1900,k:2900},FN={f:'Глухая',t:'Поворотная',k:'Поворотно-откидная'},CYC=['f','t','k'];
+var PRESETS=[
+ {n:'Кухня',d:'900×1400, одна створка',w:900,h:1400,t:['k'],p:1,g:1},
+ {n:'Спальня',d:'1300×1400, две створки',w:1300,h:1400,t:['k','f'],p:1,g:1},
+ {n:'Зал',d:'2080×1500, три створки',w:2080,h:1500,t:['t','f','k'],p:1,g:1},
+ {n:'Частный дом',d:'1500×1500, две створки, тёплое',w:1500,h:1500,t:['k','k'],p:3,g:2},
+ {n:'Своё окно',d:'задайте размеры сами',w:1200,h:1300,t:['k','f'],p:1,g:1}
+];
+var S={step:0,w:1300,h:1400,n:2,t:['k','f','f'],p:1,g:1,c:0,sill:200,slope:0,ebb:true,mesh:true,mount:true,dem:false,trash:false,fl:5,lift:true,disc:0};
+function nOpen(s){var k=0;for(var i=0;i<s.n;i++)if(s.t[i]!=='f')k++;return k}
+function calc(s,noDisc){
+ var W=s.w/1000,H=s.h/1000,S0=Math.max(W*H,1),p=PROF[s.p],g=GL[s.g],c=COL[s.c],L=[],i,fur=0;
+ for(i=0;i<s.n;i++)fur+=FUR[s.t[i]];
+ L.push({l:'Окно: '+p.n+', '+g.n.toLowerCase(),sm:S0.toFixed(2).replace('.',',')+' м² · '+Math.round(p.r*(1+c.k)+g.s).toLocaleString('ru-RU')+' ₽/м²'+(c.k?' · ламинация +15%':''),v:r100(S0*(p.r*(1+c.k)+g.s))});
+ if(fur)L.push({l:'Фурнитура',sm:s.n+' '+pl(s.n,'створка','створки','створок'),v:fur});
+ if(s.mount)L.push({l:'Монтаж',sm:'от 2 800 ₽',v:r100(Math.max(S0*1600,2800))});
+ if(+s.sill)L.push({l:'Подоконник ПВХ '+s.sill+' мм',sm:W.toFixed(2).replace('.',',')+' пог. м',v:r100(W*(s.sill==200?550:700))});
+ if(s.ebb)L.push({l:'Отлив',sm:W.toFixed(2).replace('.',',')+' пог. м',v:r100(W*350)});
+ if(+s.slope)L.push({l:'Откосы, '+(s.slope==1?'сэндвич':'штукатурка'),sm:(W+2*H).toFixed(2).replace('.',',')+' пог. м',v:r100((W+2*H)*(s.slope==1?900:1100))});
+ if(s.mesh&&nOpen(s))L.push({l:'Москитная сетка',sm:nOpen(s)+' шт.',v:800*nOpen(s)});
+ if(s.dem)L.push({l:'Демонтаж старого окна',sm:'',v:600});
+ if(s.trash)L.push({l:'Вывоз мусора',sm:'',v:400});
+ if(s.mount&&!s.lift&&s.fl>=3)L.push({l:'Подъём без лифта',sm:s.fl+' этаж',v:150*(s.fl-2)});
+ var sum=L.reduce(function(a,x){return a+x.v},0),dv=noDisc?0:Math.round(sum*Math.min(s.disc,10)/100/100)*100;
+ return {L:L,sum:sum,dv:dv,total:sum-dv};
+}
+function specText(s){return PROF[s.p].n+', '+GL[s.g].n.toLowerCase()+', '+s.w+'×'+s.h+' мм, створок '+s.n+' ('+s.t.slice(0,s.n).map(function(x){return FN[x].toLowerCase()}).join(', ')+'), цвет: '+COL[s.c].n.toLowerCase()}
+function copyS(s){var o={};for(var k in s)o[k]=s[k];o.t=s.t.slice();return o}
+/* ---------- 2D-схема окна (запасной вариант и миниатюры) ---------- */
+var uid=0;
+function winSVG(s,o){
+ o=o||{};var id='g'+(++uid),mx=Math.max(s.w,s.h),k=o.big?290/mx:230/mx,w=s.w*k,h=s.h*k,pad=o.nodim?6:34,fr=Math.max(5,Math.min(9,w/22)),cc=COL[s.c].c,vw=w+pad*2,vh=h+pad*2,n=s.n,iw=w-fr*2,ih=h-fr*2,sw=iw/n,x0=pad+fr,y0=pad+fr,i,o2='';
+ var stroke=s.c===0?'#9FB3BB':'rgba(0,0,0,.35)';
+ o2+='<svg viewBox="0 0 '+vw.toFixed(1)+' '+vh.toFixed(1)+'" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Схема окна '+s.w+' на '+s.h+' мм, створок: '+n+'"><defs><linearGradient id="'+id+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DCEEF5"/><stop offset=".55" stop-color="#BFDCE8"/><stop offset="1" stop-color="#E6F3F8"/></linearGradient></defs>';
+ o2+='<rect x="'+pad+'" y="'+pad+'" width="'+w+'" height="'+h+'" rx="3" fill="'+cc+'" stroke="'+stroke+'"/>';
+ o2+='<rect x="'+x0+'" y="'+y0+'" width="'+iw+'" height="'+ih+'" fill="url(#'+id+')" stroke="'+stroke+'"/>';
+ for(i=0;i<n;i++){
+  var sx=x0+i*sw,t=s.t[i],hl=(i<n/2),pw=t==='f'?2:Math.max(4,fr*.7),ax=sx+(i>0?1.5:0),aw=sw-(i>0?1.5:0)-(i<n-1?1.5:0);
+  o2+='<g class="'+(o.click?'sashg':'')+'" data-i="'+i+'">';
+  if(t!=='f')o2+='<rect x="'+(ax+pw/2)+'" y="'+(y0+pw/2)+'" width="'+(aw-pw)+'" height="'+(ih-pw)+'" fill="none" stroke="'+cc+'" stroke-width="'+pw+'"/><rect x="'+(ax+pw)+'" y="'+(y0+pw)+'" width="'+(aw-pw*2)+'" height="'+(ih-pw*2)+'" fill="none" stroke="'+stroke+'" stroke-width=".8"/>';
+  var ix=ax+pw,iy=y0+pw,iw2=aw-pw*2,ih2=ih-pw*2,L=ix,R=ix+iw2,T=iy,B=iy+ih2,mid=(T+B)/2,cx=(L+R)/2;
+  if(t==='t'||t==='k'){var hx=hl?L:R,ox=hl?R:L;o2+='<polyline points="'+ox+','+T+' '+hx+','+mid+' '+ox+','+B+'" fill="none" stroke="#10242C" stroke-width="1.1" stroke-linejoin="round"/>';}
+  if(t==='k')o2+='<polyline points="'+L+','+T+' '+cx+','+B+' '+R+','+T+'" fill="none" stroke="#10242C" stroke-width="1.1" stroke-dasharray="4 3"/>';
+  if(t!=='f'){var hdx=hl?R-pw-2:L+pw+2;o2+='<rect x="'+(hdx-2)+'" y="'+(mid-7)+'" width="4" height="14" rx="2" fill="#10242C"/>'}
+  if(o.click)o2+='<rect class="hit" x="'+sx+'" y="'+y0+'" width="'+sw+'" height="'+ih+'" fill="transparent"><title>Створка '+(i+1)+': '+FN[t].toLowerCase()+'. Нажмите, чтобы сменить</title></rect>';
+  o2+='</g>';
+ }
+ if(!o.nodim){
+  o2+='<g fill="#5A6E77" font-size="11" font-family="Onest,sans-serif" text-anchor="middle"><text x="'+(pad+w/2)+'" y="'+(pad-12)+'">'+s.w+' мм</text><text transform="translate('+(pad+w+20)+' '+(pad+h/2)+') rotate(90)">'+s.h+' мм</text></g>';
+  o2+='<g stroke="#5A6E77" stroke-width=".8"><line x1="'+pad+'" y1="'+(pad-6)+'" x2="'+(pad+w)+'" y2="'+(pad-6)+'"/><line x1="'+(pad+w+8)+'" y1="'+pad+'" x2="'+(pad+w+8)+'" y2="'+(pad+h)+'"/></g>';
+ }
+ return o2+'</svg>';
+}
+/* сечение профиля: схема, одинаково работает без WebGL */
+function chambersOf(p){return p.c}
+function secSVG(pi,gi,o){
+ o=o||{};var p=PROF[pi],g=GL[gi],D=p.d,G=Math.min(g.mm,D-22),np=g.np,N=p.c,vb=o.mini?'0 0 120 70':'0 0 200 150',sc=o.mini?.7:1.35;
+ var cw=200,ox=o.mini?30:(cw-D*sc)/2,by=o.mini?32:78,bh=o.mini?36:70*sc,bw=D*sc,cx=ox+bw/2,gw=G*sc,nw=(G+6)*sc,s='';
+ if(o.mini){bw=D*.68;ox=(120-bw)/2;cx=60;gw=G*.68;nw=(G+6)*.68;by=34;bh=34}
+ s+='<svg viewBox="'+vb+'" xmlns="http://www.w3.org/2000/svg" '+(o.mini?'class="mini" aria-hidden="true"':'role="img" aria-label="Разрез профиля: '+N+' '+pl(N,'камера','камеры','камер')+', стеклопакет '+g.n.toLowerCase()+'"')+'>';
+ s+='<rect x="'+ox+'" y="'+by+'" width="'+bw+'" height="'+bh+'" rx="2" fill="#F4F6F6" stroke="#8FA3AC" stroke-width="1.2"/>';
+ s+='<rect x="'+(cx-nw/2)+'" y="'+(by-1)+'" width="'+nw+'" height="'+(bh*.3)+'" fill="#E7EEF1"/>';
+ var pad=bw*.04,tw=bw-pad*2-(N-1)*2.2,ws=[],tot=0,i;
+ for(i=0;i<N;i++){ws[i]=(N>=3&&i===1)?2:1;tot+=ws[i]}
+ var x=ox+pad,cy=by+bh*.4,chh=bh*.5;
+ for(i=0;i<N;i++){var cwd=tw*ws[i]/tot;s+='<rect x="'+x.toFixed(1)+'" y="'+cy.toFixed(1)+'" width="'+cwd.toFixed(1)+'" height="'+chh.toFixed(1)+'" fill="#CFE0E6" stroke="#8FA3AC" stroke-width=".6"/>';
+  if(N>=3&&i===1)s+='<rect x="'+(x+1.5).toFixed(1)+'" y="'+(cy+1.5).toFixed(1)+'" width="'+(cwd-3).toFixed(1)+'" height="'+(chh-3).toFixed(1)+'" fill="none" stroke="#6C7A82" stroke-width="1.4"/>';
+  x+=cwd+2.2}
+ var gt=o.mini?8:20,gap=(G-4*np/ (1))/(np-1);
+ var pw2=4*(o.mini?.68:sc);
+ for(i=0;i<np;i++){var gx=cx-gw/2+i*((gw-pw2)/(np-1));s+='<rect x="'+gx.toFixed(1)+'" y="'+gt+'" width="'+pw2.toFixed(1)+'" height="'+(by+bh*.24-gt)+'" fill="#9FD0E6" stroke="#6FA6BD" stroke-width=".5"/>'}
+ s+='<rect x="'+(cx-gw/2)+'" y="'+(by-bh*.12)+'" width="'+gw+'" height="'+(bh*.18)+'" fill="#B7C0C5" opacity=".9"/>';
+ if(!o.mini)s+='<g font-family="Onest,sans-serif" font-size="9" fill="#5A6E77" text-anchor="middle"><text x="'+cx+'" y="'+(by+bh+14)+'">'+D+' мм · '+N+' '+pl(N,'камера','камеры','камер')+'</text><text x="'+cx+'" y="'+(gt-5)+'">стеклопакет '+G+' мм</text></g>';
+ return s+'</svg>';
+}
+function profNote(pi,gi){var p=PROF[pi],g=GL[gi],G=Math.min(g.mm,p.d-22);return {cam:p.c,d:p.d,G:G,gl:g.n,np:g.np}}
+/* =====================================================================
+   3D-модель окна на Three.js (r128, файл three.min.js лежит рядом)
+   ===================================================================== */
+var T=window.THREE,PI=Math.PI;
+var COARSE=!!(window.matchMedia&&matchMedia('(pointer:coarse)').matches);
+function seeded(s){return function(){s=(s*16807)%2147483647;return (s-1)/2147483646}}
+function cnv(w,h,fn){var c=document.createElement('canvas');c.width=w;c.height=h;fn(c.getContext('2d'),w,h);return c}
+function mkTex(c,rep){var t=new T.CanvasTexture(c);t.encoding=T.sRGBEncoding;t.anisotropy=2;if(rep){t.wrapS=t.wrapT=T.RepeatWrapping}return t}
+function col(h){return new T.Color(h).convertSRGBToLinear()}
+var TX=null;
+function getTex(){
+ if(TX)return TX;TX={};var r=seeded(11);
+ TX.wood=mkTex(cnv(256,256,function(g,w,h){g.fillStyle='#B27C3C';g.fillRect(0,0,w,h);for(var i=0;i<140;i++){var y=r()*h,a=.06+r()*.22;g.strokeStyle=(r()<.7?'rgba(92,52,16,':'rgba(236,188,118,')+a+')';g.lineWidth=.6+r()*2.4;g.beginPath();g.moveTo(0,y);g.bezierCurveTo(w*.3,y+(r()-.5)*10,w*.65,y+(r()-.5)*10,w,y+(r()-.5)*6);g.stroke()}}),true);
+ TX.wood.repeat.set(3,3);
+ TX.glare=mkTex(cnv(128,128,function(g,w,h){var gr=g.createLinearGradient(0,0,w,h);gr.addColorStop(0,'rgba(255,255,255,0)');gr.addColorStop(.28,'rgba(255,255,255,0)');gr.addColorStop(.36,'rgba(255,255,255,.5)');gr.addColorStop(.44,'rgba(255,255,255,0)');gr.addColorStop(.54,'rgba(255,255,255,0)');gr.addColorStop(.6,'rgba(255,255,255,.28)');gr.addColorStop(.66,'rgba(255,255,255,0)');g.fillStyle=gr;g.fillRect(0,0,w,h)}));
+ TX.frost=mkTex(cnv(256,256,function(g,w,h){var r2=seeded(5),i,gr=g.createRadialGradient(w/2,h/2,w*.2,w/2,h/2,w*.75);gr.addColorStop(0,'rgba(236,246,255,0)');gr.addColorStop(1,'rgba(236,246,255,.6)');g.fillStyle=gr;g.fillRect(0,0,w,h);
+  for(i=0;i<1600;i++){var x=r2()*w,y=r2()*h,dx=(x/w-.5)*2,dy=(y/h-.5)*2,d=Math.max(Math.abs(dx),Math.abs(dy));if(r2()>d*d*1.1+.06)continue;g.fillStyle='rgba(255,255,255,'+(.2+r2()*.55)+')';g.beginPath();g.arc(x,y,.7+r2()*2.4,0,6.3);g.fill()}
+  g.strokeStyle='rgba(255,255,255,.45)';g.lineWidth=1;for(i=0;i<90;i++){var s=r2()*4,ex=s<1?r2()*w:s<2?r2()*w:s<3?0:w,ey=s<1?0:s<2?h:r2()*h,l=10+r2()*34,a=(r2()-.5)*1.4+(s<1?1.57:s<2?-1.57:s<3?0:3.14);g.beginPath();g.moveTo(ex,ey);g.lineTo(ex+Math.cos(a)*l,ey+Math.sin(a)*l);g.stroke()}}));
+ TX.net=mkTex(cnv(32,32,function(g,w,h){g.strokeStyle='rgba(70,82,88,.95)';g.lineWidth=2;g.beginPath();g.moveTo(0,1);g.lineTo(w,1);g.moveTo(1,0);g.lineTo(1,h);g.stroke()}),true);
+ TX.dot=mkTex(cnv(32,32,function(g,w,h){var gr=g.createRadialGradient(16,16,0,16,16,16);gr.addColorStop(0,'rgba(255,255,255,1)');gr.addColorStop(.5,'rgba(255,255,255,.7)');gr.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=gr;g.fillRect(0,0,w,h)}));
+ return TX;
+}
+var SKY={};
+function skyTex(win){
+ var k=win?'w':'d';if(SKY[k])return SKY[k];
+ var c=cnv(1024,512,function(g,w,h){
+  var hz=h*.62,r=seeded(win?3:9),gr=g.createLinearGradient(0,0,0,hz);
+  if(win){gr.addColorStop(0,'#A9B9C5');gr.addColorStop(1,'#E8EEF1')}else{gr.addColorStop(0,'#4F9FD8');gr.addColorStop(.7,'#A9D5EE');gr.addColorStop(1,'#E4F2F8')}
+  g.fillStyle=gr;g.fillRect(0,0,w,hz);
+  if(!win){for(var i=0;i<9;i++){var cx=r()*w,cy=40+r()*hz*.5,cr=60+r()*90,rg=g.createRadialGradient(cx,cy,0,cx,cy,cr);rg.addColorStop(0,'rgba(255,255,255,.85)');rg.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=rg;g.save();g.translate(cx,cy);g.scale(1.7,.5);g.translate(-cx,-cy);g.beginPath();g.arc(cx,cy,cr,0,6.3);g.fill();g.restore()}}
+  var x=0;while(x<w){var bw=60+r()*90,bh=70+r()*130;g.fillStyle=win?'#8C9BA6':'#8FA7B3';g.fillRect(x,hz-bh,bw,bh+4);
+   g.fillStyle=win?'#F2F5F7':'#B7CAD3';if(win)g.fillRect(x,hz-bh,bw,5);
+   g.fillStyle=win?'rgba(255,255,255,.22)':'rgba(255,255,255,.3)';for(var yy=hz-bh+14;yy<hz-8;yy+=18)for(var xx=x+8;xx<x+bw-10;xx+=16)g.fillRect(xx,yy,8,10);x+=bw+8+r()*30}
+  var gg=g.createLinearGradient(0,hz,0,h);if(win){gg.addColorStop(0,'#F6F9FA');gg.addColorStop(1,'#DDE6EA')}else{gg.addColorStop(0,'#9FBF7F');gg.addColorStop(1,'#6E9650')}
+  g.fillStyle=gg;g.fillRect(0,hz,w,h-hz);
+  if(win){g.fillStyle='#7F8E5E';for(var j=0;j<14;j++){var tx=r()*w,ty=hz+10+r()*60;g.fillStyle='#6F6A5E';g.fillRect(tx,ty-26,3,26);g.strokeStyle='#6F6A5E';g.lineWidth=2;g.beginPath();g.moveTo(tx+1,ty-20);g.lineTo(tx-9,ty-30);g.moveTo(tx+1,ty-16);g.lineTo(tx+11,ty-27);g.stroke()}}
+  else{for(var j2=0;j2<14;j2++){var tx2=r()*w,ty2=hz+10+r()*70;g.fillStyle='#4F7A3A';g.beginPath();g.arc(tx2,ty2-18,13+r()*6,0,6.3);g.fill();g.fillStyle='#6B5638';g.fillRect(tx2-2,ty2-8,4,14)}}
+ });
+ return SKY[k]=mkTex(c);
+}
+/* ---------- материалы (на каждый просмотрщик свои, текстуры общие) ---------- */
+function makeMats(){
+ var tx=getTex(),M={},B=T.MeshBasicMaterial,S=T.MeshStandardMaterial;
+ M.fr=[new S({color:col(0xF3F5F4),roughness:.42}),new S({color:col(0xFFFFFF),map:tx.wood,roughness:.62}),new S({color:col(0x3A4046),roughness:.48})];
+ M.black=new S({color:col(0x14181A),roughness:.8});
+ M.glass=new S({color:col(0xBFE3F0),transparent:true,opacity:.2,roughness:.05,metalness:.05,depthWrite:false,side:T.DoubleSide});
+ M.glassE=new S({color:col(0xCDE9D6),transparent:true,opacity:.27,roughness:.05,metalness:.1,depthWrite:false,side:T.DoubleSide});
+ M.glare=new B({map:tx.glare,transparent:true,opacity:.75,depthWrite:false,blending:T.AdditiveBlending,side:T.DoubleSide});
+ M.frost=new B({map:tx.frost,transparent:true,opacity:0,depthWrite:false,side:T.DoubleSide});
+ M.net=new B({map:tx.net,transparent:true,opacity:.5,depthWrite:false,side:T.DoubleSide});
+ M.spacer=new S({color:col(0xB8C0C4),metalness:.5,roughness:.4});
+ M.spacerW=new S({color:col(0x2A2F31),roughness:.6});
+ M.hw=new S({color:col(0xD4D9DB),metalness:.75,roughness:.32});
+ M.metal=new S({color:col(0xA7AFB4),metalness:.6,roughness:.42});
+ M.sill=new S({color:col(0xF6F7F7),roughness:.28});
+ M.slW=new S({color:col(0xF3F4F4),roughness:.55});
+ M.slP=new S({color:col(0xEAE3D4),roughness:.9});
+ M.wOut=new S({color:col(0xB9C2C6),roughness:.95});
+ M.wIn=new S({color:col(0xEFE9DD),roughness:.95});
+ M.wEdge=new S({color:col(0xC9C5BB),roughness:.95});
+ M.pick=new B({visible:false,side:T.DoubleSide});
+ M.hl=new B({color:col(0x0E7C86),transparent:true,opacity:.2,depthTest:false,side:T.DoubleSide});
+ M.sky=new B({map:skyTex(false)});
+ M.roomF=new S({color:col(0xB89A74),roughness:.8,side:T.BackSide});
+ M.roomW=new S({color:col(0xECE6DA),roughness:.95,side:T.BackSide});
+ M.roomC=new S({color:col(0xF7F5F0),roughness:.95,side:T.BackSide});
+ M.roomB=new S({color:col(0xE3DCCD),roughness:.95,side:T.BackSide});
+ M.secBody=[new S({color:col(0xF1F3F3),roughness:.55}),new S({color:col(0xF1F3F3),roughness:.55}),new S({color:col(0xF1F3F3),roughness:.55})];
+ M.steel=new S({color:col(0x8C979D),metalness:.7,roughness:.4});
+ M.gask=new S({color:col(0x14181A),roughness:.85});
+ M.glassS=new S({color:col(0x9FD0E6),transparent:true,opacity:.6,roughness:.1,depthWrite:false});
+ M.secBack=new S({color:col(0x1B2D34),roughness:1});
+ M.film=[null,new S({color:col(0xB07A3B),roughness:.6}),new S({color:col(0x3A4046),roughness:.5})];
+ return M;
+}
+/* ---------- геометрия: рамы, створки, стеклопакеты ---------- */
+function ext(poly,depth,mat){
+ var sh=new T.Shape();sh.moveTo(poly[0][0],poly[0][1]);for(var i=1;i<poly.length;i++)sh.lineTo(poly[i][0],poly[i][1]);sh.closePath();
+ var g=new T.ExtrudeGeometry(sh,{depth:depth,bevelEnabled:false,steps:1});g.translate(0,0,-depth/2);
+ return new T.Mesh(g,mat);
+}
+function ringM(x0,y0,x1,y1,f,depth,mat){
+ return [ext([[x0,y0],[x1,y0],[x1-f,y0+f],[x0+f,y0+f]],depth,mat),ext([[x0,y1],[x0+f,y1-f],[x1-f,y1-f],[x1,y1]],depth,mat),ext([[x0,y0],[x0+f,y0+f],[x0+f,y1-f],[x0,y1]],depth,mat),ext([[x1,y0],[x1,y1],[x1-f,y1-f],[x1-f,y0+f]],depth,mat)];
+}
+function addAll(g,a){a.forEach(function(m){g.add(m)})}
+function mkGlass(gW,gH,sp,M,P){
+ var G=new T.Group(),gl=GL[sp.g],np=gl.np,gz=np===2?.018:.014,span=(np-1)*gz,k,pm=sp.g===2?M.glassE:M.glass;
+ for(k=0;k<np;k++){var pn=new T.Mesh(new T.PlaneGeometry(gW,gH),pm);pn.position.z=(k-(np-1)/2)*gz;pn.renderOrder=2;G.add(pn)}
+ addAll(G,ringM(-gW/2,-gH/2,gW/2,gH/2,.012,span+.003,sp.g===2?M.spacerW:M.spacer));
+ var gp=new T.Mesh(new T.PlaneGeometry(gW,gH),M.glare);gp.position.z=span/2+.004;gp.renderOrder=3;G.add(gp);
+ var fp=new T.Mesh(new T.PlaneGeometry(gW,gH),M.frost);fp.position.z=-span/2-.004;fp.renderOrder=3;G.add(fp);
+ return G;
+}
+function mkHandle(M){
+ var g=new T.Group(),pl=new T.Mesh(new T.BoxGeometry(.024,.075,.007),M.hw),st=new T.Mesh(new T.CylinderGeometry(.0058,.0058,.03,10),M.hw),lv=new T.Group(),bar=new T.Mesh(new T.BoxGeometry(.017,.1,.011),M.hw);
+ st.rotation.x=PI/2;st.position.z=-.014;bar.position.set(0,-.045,0);lv.position.z=-.028;lv.add(bar);
+ g.add(pl,st,lv);g.userData.lever=lv;return g;
+}
+function buildWindow(sp,M){
+ var root=new T.Group(),P={root:root,frame:[],imp:[],sashes:[],glass:[],hw:[],picks:[],cells:[],parts:[]};
+ var w=sp.w,h=sp.h,D=sp.D,n=sp.n,fm=M.fr[sp.c],fw=.056,iw=.08,ix0=-w/2+fw,iy0=-h/2+fw,ix1=w/2-fw,iy1=h/2-fw,ih=iy1-iy0,cw=(ix1-ix0-(n-1)*iw)/n,cy=(iy0+iy1)/2;
+ var fr=ringM(-w/2,-h/2,w/2,h/2,fw,D,fm),fromV=[[0,-1.5,.6],[0,1.5,.6],[-1.7,0,.6],[1.7,0,.6]];
+ fr.forEach(function(m,i){m.userData.from=new T.Vector3(fromV[i][0],fromV[i][1],fromV[i][2]);P.frame.push(m);root.add(m)});
+ for(var i=0;i<n;i++){
+  var cx0=ix0+i*(cw+iw),cxm=cx0+cw/2,t=sp.t[i],op=t!=='f';
+  if(i<n-1){var im=new T.Mesh(new T.BoxGeometry(iw,ih,D*.96),fm);im.position.set(cx0+cw+iw/2,cy,0);P.imp.push(im);root.add(im)}
+  var pk=new T.Mesh(new T.PlaneGeometry(cw,ih),M.pick);pk.position.set(cxm,cy,D/2+.014);pk.userData.cell=i;pk.userData.cw=cw;pk.userData.ch=ih;P.picks.push(pk);root.add(pk);
+  P.cells.push({cx:cxm,cw:cw,t:t});
+  var content=new T.Group();
+  if(op){
+   var sg=.0015,sW=cw-2*sg,sH=ih-2*sg,sw=.05,Ds=D*.78,hs=(i<n/2)?-1:1,gW=sW-2*sw-.012,gH=sH-2*sw-.012;
+   addAll(content,ringM(-sW/2,-sH/2,sW/2,sH/2,sw,Ds,fm));
+   addAll(content,ringM(-sW/2+sw,-sH/2+sw,sW/2-sw,sH/2-sw,.0065,Ds*.5,M.black));
+   var gg=mkGlass(gW,gH,sp,M);content.add(gg);P.glass.push(gg);
+   var hd=mkHandle(M);hd.position.set(-hs*(sW/2-sw/2),-.02,-Ds/2-.003);content.add(hd);P.hw.push(hd);
+   for(var q=-1;q<=1;q+=2){var hg=new T.Mesh(new T.BoxGeometry(.02,.07,.008),M.hw);hg.position.set(hs*(sW/2-sw/2),q*(sH/2-.17),-Ds/2-.003);content.add(hg);P.hw.push(hg)}
+   var xh=cxm+hs*(sW/2),turn=new T.Group(),tilt=new T.Group();
+   turn.position.set(xh,0,0);tilt.position.set(cxm-xh,cy-sH/2,0);content.position.set(0,sH/2,0);
+   tilt.add(content);turn.add(tilt);root.add(turn);P.parts.push(turn);
+   P.sashes.push({i:i,t:t,hs:hs,turn:turn,tilt:tilt,lever:hd.userData.lever,curT:0,curL:0,curV:0,tT:0,tL:0,tV:0,root:turn});
+   if(sp.mesh){
+    var nt=new T.PlaneGeometry(cw-.008,ih-.008),uv=nt.attributes.uv,j;for(j=0;j<uv.count;j++)uv.setXY(j,uv.getX(j)*(cw-.008)/.022,uv.getY(j)*(ih-.008)/.022);
+    var nm=new T.Mesh(nt,M.net);nm.position.set(cxm,cy,D/2+.007);nm.renderOrder=4;root.add(nm);
+    ringM(cxm-cw/2,cy-ih/2,cxm+cw/2,cy+ih/2,.012,.01,M.fr[0]).forEach(function(m){m.position.z=D/2+.007;root.add(m)});
+   }
+  }else{
+   addAll(content,ringM(-cw/2,-ih/2,cw/2,ih/2,.024,D*.55,fm));
+   addAll(content,ringM(-cw/2+.024,-ih/2+.024,cw/2-.024,ih/2-.024,.006,D*.3,M.black));
+   var gf=mkGlass(cw-.06,ih-.06,sp,M);content.add(gf);P.glass.push(gf);
+   content.position.set(cxm,cy,0);root.add(content);P.sashes.push(null);P.parts.push(content);
+  }
+ }
+ P.sashes=P.sashes.filter(Boolean);
+ return P;
+}
+function buildWall(sp,M){
+ var G=new T.Group(),W=7,H=4.2,T0=.3,w=sp.w,h=sp.h,mats=[M.wEdge,M.wEdge,M.wEdge,M.wEdge,M.wOut,M.wIn];
+ function part(x0,x1,y0,y1){var m=new T.Mesh(new T.BoxGeometry(x1-x0,y1-y0,T0),mats);m.position.set((x0+x1)/2,(y0+y1)/2,0);G.add(m)}
+ part(-W/2,-w/2,-H/2,H/2);part(w/2,W/2,-H/2,H/2);part(-w/2,w/2,h/2,H/2);part(-w/2,w/2,-H/2,-h/2);
+ return G;
+}
+function buildAcc(sp,M){
+ var G=new T.Group(),w=sp.w,h=sp.h,D=sp.D,sd=sp.sill/1000,m;
+ if(sd){m=new T.Mesh(new T.BoxGeometry(w+.16,.032,sd),M.sill);m.position.set(0,-h/2+.004-.016,-(.02+sd/2));G.add(m)}
+ if(sp.ebb){var eg=new T.Group();m=new T.Mesh(new T.BoxGeometry(w+.08,.008,.17),M.metal);m.position.set(0,0,.085);eg.add(m);
+  var lip=new T.Mesh(new T.BoxGeometry(w+.08,.02,.006),M.metal);lip.position.set(0,-.01,.17);eg.add(lip);
+  eg.position.set(0,-h/2+.002,.03);eg.rotation.x=.12;G.add(eg)}
+ if(sp.slope){
+  var mt=sp.slope===1?M.slW:M.slP,zl=.15-D/2-.004,zc=-(D/2+.004+zl/2),th=.014;
+  m=new T.Mesh(new T.BoxGeometry(th,h,zl),mt);m.position.set(-w/2+th/2,0,zc);G.add(m);
+  m=new T.Mesh(new T.BoxGeometry(th,h,zl),mt);m.position.set(w/2-th/2,0,zc);G.add(m);
+  m=new T.Mesh(new T.BoxGeometry(w-2*th,th,zl),mt);m.position.set(0,h/2-th/2,zc);G.add(m);
+ }
+ return G;
+}
+/* ---------- разрез профиля (миллиметры, группа масштабируется на 0.01) ---------- */
+function buildSection(sp,M){
+ var G=new T.Group(),pr=PROF[sp.pi],gl=GL[sp.g],D=pr.d,N=pr.c,H=70,Gm=Math.min(gl.mm,D-22),np=gl.np,len=60,nW=Gm+6,nh=22,ny=H-nh,i,pins=[],hl=[],air=[];
+ function bx(w,h,l,mat,x,y,z){var m=new T.Mesh(new T.BoxGeometry(w,h,l),mat);m.position.set(x,y,z||0);G.add(m);return m}
+ var sh=new T.Shape(),x0=-D/2,x1=D/2;
+ sh.moveTo(x0,0);sh.lineTo(x1,0);sh.lineTo(x1,H);sh.lineTo(nW/2,H);sh.lineTo(nW/2,ny);sh.lineTo(-nW/2,ny);sh.lineTo(-nW/2,H);sh.lineTo(x0,H);sh.closePath();
+ var wall=3,web=2.4,avail=D-2*wall-(N-1)*web,ws=[],tot=0,cy0=5,cy1=ny-4,cx=x0+wall,ch=[];
+ for(i=0;i<N;i++){ws[i]=(N>=3&&i===1)?2:1;tot+=ws[i]}
+ for(i=0;i<N;i++){var cwd=avail*ws[i]/tot,hp=new T.Path();hp.moveTo(cx,cy0);hp.lineTo(cx+cwd,cy0);hp.lineTo(cx+cwd,cy1);hp.lineTo(cx,cy1);hp.closePath();sh.holes.push(hp);ch.push({x:cx+cwd/2,w:cwd});cx+=cwd+web}
+ var geo=new T.ExtrudeGeometry(sh,{depth:len,bevelEnabled:false});geo.translate(0,0,-len/2);
+ var body=new T.Mesh(geo,M.secBody[0]);G.add(body);
+ if(sp.c>0){bx(1.4,H,len,M.film[sp.c],x1+.7,H/2);bx(1.4,H,len,M.film[sp.c],x0-.7,H/2)}
+ var mi=N>=3?1:0,mc=ch[mi],yh=(cy0+cy1)/2,hh=cy1-cy0;
+ var st=new T.Shape();st.moveTo(-mc.w/2+.6,-hh/2+.6);st.lineTo(mc.w/2-.6,-hh/2+.6);st.lineTo(mc.w/2-.6,hh/2-.6);st.lineTo(-mc.w/2+.6,hh/2-.6);st.closePath();
+ var hp2=new T.Path();hp2.moveTo(-mc.w/2+2.4,-hh/2+2.4);hp2.lineTo(mc.w/2-2.4,-hh/2+2.4);hp2.lineTo(mc.w/2-2.4,hh/2-2.4);hp2.lineTo(-mc.w/2+2.4,hh/2-2.4);hp2.closePath();st.holes.push(hp2);
+ var sg=new T.ExtrudeGeometry(st,{depth:len-4,bevelEnabled:false});sg.translate(0,0,-(len-4)/2);var sm=new T.Mesh(sg,M.steel);sm.position.set(mc.x,yh,0);G.add(sm);
+ bx(3,nh-3,len-2,M.gask,-Gm/2-1.5,ny+(nh-3)/2+1.5);bx(3,nh-3,len-2,M.gask,Gm/2+1.5,ny+(nh-3)/2+1.5);
+ var pitch=np>1?(Gm-4)/(np-1):0,gy0=ny+1,gh=62,k;
+ for(k=0;k<np;k++)bx(4,gh,len-4,M.glassS,-Gm/2+2+k*pitch,gy0+gh/2,0);
+ for(k=0;k<np-1;k++){var gx=-Gm/2+2+k*pitch+pitch/2,gw=pitch-4,sp2=bx(gw,11,len-4,sp.g===2?M.spacerW:M.spacer,gx,gy0+5.5,0);
+  var am=new T.MeshBasicMaterial({color:col(0xF6C94E),transparent:true,opacity:0,depthWrite:false});bx(gw,gh-12,len-6,am,gx,gy0+12+(gh-12)/2,0);air.push(am)}
+ ch.forEach(function(c){var am=new T.MeshBasicMaterial({color:col(0x23C1CF),transparent:true,opacity:0,depthWrite:false});bx(c.w-.5,hh-.5,len-2,am,c.x,yh,0);hl.push(am)});
+ bx(190,150,2,M.secBack,0,62,-len/2-3);
+ pins.push({p:[ch[N-1].x,cy1-6,len/2],t:N+' '+pl(N,'камера','камеры','камер')+' в профиле',s:1});
+ pins.push({p:[mc.x,yh,len/2],t:'Стальной вкладыш держит створку',s:-1});
+ pins.push({p:[Gm/2+1.5,ny+14,len/2],t:'Уплотнитель',s:1});
+ pins.push({p:[-Gm/2+2,gy0+gh-4,len/2],t:'Стеклопакет '+Gm+' мм, '+(np-1)+' '+pl(np-1,'камера','камеры','камер'),s:-1});
+ if(sp.c>0)pins.push({p:[x1+1.4,12,len/2],t:'Ламинация: плёнка 0,3 мм',s:1});
+ return {G:G,hl:hl,air:air,pins:pins,info:{N:N,D:D,Gm:Gm,np:np}};
+}
+function disp(o){o.traverse(function(m){if(m.geometry)m.geometry.dispose()})}
+function ease(x){return x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2}
+function seg(p,a,b){return Math.max(0,Math.min(1,(p-a)/(b-a)))}
+/* ---------- просмотрщик ---------- */
+function Viewer(canvas,o){
+ o=o||{};var self=this;this.cv=canvas;this.o=o;this.hero=!!o.hero;this.vis=true;this.dirty=true;this.ok=false;this.lost=false;
+ var r=new T.WebGLRenderer({canvas:canvas,antialias:!this.hero&&!(COARSE&&(window.devicePixelRatio||1)>=2),alpha:this.hero,powerPreference:'default'});
+ if(!r.getContext())throw new Error('nogl');
+ this.r=r;r.outputEncoding=T.sRGBEncoding;r.setPixelRatio(Math.min(window.devicePixelRatio||1,this.hero?1.5:(COARSE?1.75:2)));
+ if(this.hero)r.setClearColor(0x000000,0);else r.setClearColor(0xBFE0F1,1);
+ this.sc=new T.Scene();this.cam=new T.PerspectiveCamera(this.hero?30:36,1.2,.05,90);this.fov=this.cam.fov;
+ this.M=makeMats();
+ this.hemi=new T.HemisphereLight(0xFFFFFF,0xB4A58F,.62);this.sun=new T.DirectionalLight(0xFFF1DC,.62);this.sun.position.set(2.5,3.5,6);this.fill=new T.DirectionalLight(0xFFF5E8,.38);this.fill.position.set(-1.5,2.5,-5);
+ this.sc.add(this.hemi,this.sun,this.fill);
+ this.asp=1.2;this.base=0;this.baseT=0;this.yawRel=0;this.yawT=0;this.pitch=.05;this.pitchT=.05;this.zoom=1;this.zoomT=1;
+ this.openMode='closed';this.season=0;this.sec=false;this.secA=0;this.secT=0;this.hlOn=0;this.hlA=0;this.prog=1;this.frostA=0;this.t=0;this.snowAcc=0;
+ this.rayc=new T.Raycaster();this.hover=-1;this.tapCb=null;this.sd=null;
+ canvas.addEventListener('webglcontextlost',function(e){e.preventDefault();self.lost=true;if(o.onLost)o.onLost()});
+ if(window.ResizeObserver)new ResizeObserver(function(){self.resize()}).observe(canvas);else addEventListener('resize',function(){self.resize()});
+ if(window.IntersectionObserver)new IntersectionObserver(function(es){self.vis=es[0].isIntersecting;if(self.vis)self.dirty=true},{rootMargin:'160px'}).observe(canvas);
+ if(!this.hero){this.buildEnv();this.bind();this.hlm=new T.Mesh(new T.PlaneGeometry(1,1),this.M.hl);this.hlm.visible=false;this.hlm.renderOrder=10;this.sc.add(this.hlm)}
+ this.resize();VIEWS.push(this);startLoop();this.ok=true;
+}
+var VIEWS=[],loopOn=false;
+function startLoop(){
+ if(loopOn)return;loopOn=true;var last=performance.now();
+ (function loop(now){requestAnimationFrame(loop);var dt=Math.min(.05,(now-last)/1000);last=now;if(document.hidden)return;for(var i=0;i<VIEWS.length;i++){var v=VIEWS[i];if(v.vis&&!v.lost)v.frame(dt,now)}})(last);
+}
+Viewer.prototype.buildEnv=function(){
+ var M=this.M,sc=this.sc,room=new T.Mesh(new T.BoxGeometry(7,4.2,4.5),[M.roomW,M.roomW,M.roomC,M.roomF,new T.MeshBasicMaterial({visible:false}),M.roomB]);room.position.set(0,0,-.16-2.25);sc.add(room);
+ var sky=new T.Mesh(new T.PlaneGeometry(80,40),M.sky);sky.position.set(0,3.6,20);sky.rotation.y=PI;sc.add(sky);this.skyM=sky;
+ var n=COARSE?110:220,pos=new Float32Array(n*3),i;this.snowN=n;this.snowV=[];
+ for(i=0;i<n;i++){pos[i*3]=(Math.random()-.5)*7;pos[i*3+1]=(Math.random()-.5)*5;pos[i*3+2]=.3+Math.random()*3.2;this.snowV.push(.25+Math.random()*.35)}
+ var sg=new T.BufferGeometry();sg.setAttribute('position',new T.BufferAttribute(pos,3));
+ this.snow=new T.Points(sg,new T.PointsMaterial({map:getTex().dot,size:.07,transparent:true,depthWrite:false,color:0xFFFFFF,sizeAttenuation:true}));this.snow.visible=false;this.snow.frustumCulled=false;sc.add(this.snow);
+};
+Viewer.prototype.resize=function(){var c=this.cv,w=c.clientWidth,h=c.clientHeight;if(!w||!h)return;this.r.setSize(w,h,false);this.asp=w/h;this.cam.aspect=this.asp;this.cam.updateProjectionMatrix();this.dirty=true};
+Viewer.prototype.setSpec=function(sp){this.pend=sp;this.dirty=true};
+Viewer.prototype.apply=function(){
+ var sp=this.sp=this.pend;this.pend=null;
+ if(this.W){this.sc.remove(this.W);disp(this.W)}
+ var W=new T.Group(),P=buildWindow(sp,this.M);W.add(P.root);
+ if(!this.hero){W.add(buildWall(sp,this.M));W.add(buildAcc(sp,this.M))}
+ this.sc.add(W);this.W=W;this.P=P;this.setTargets(true);
+ if(this.hero)this.heroApply();
+ if(this.secG){this.sc.remove(this.secG.G);disp(this.secG.G);this.secG=null}
+ if(this.sec)this.mkSec();
+ this.updateFrost();this.hlm&&(this.hlm.visible=false);this.dirty=true;
+};
+Viewer.prototype.setTargets=function(snap){
+ var m=this.openMode;
+ this.P.sashes.forEach(function(s){
+  var op=s.t==='t'||s.t==='k';s.tT=(m==='turn'&&op)?1.45:0;s.tL=(m==='tilt'&&s.t==='k')?.17:0;
+  s.tV=(m==='turn'&&op)?s.hs*PI/2:(m==='tilt'&&s.t==='k')?PI:0;
+  if(snap){s.curT=s.tT;s.curL=s.tL;s.curV=s.tV;s.turn.rotation.y=-s.hs*s.curT;s.tilt.rotation.x=-s.curL;s.lever.rotation.z=s.curV}
+ });
+};
+Viewer.prototype.setOpen=function(m){this.openMode=m;if(this.P)this.setTargets(false);this.dirty=true};
+Viewer.prototype.setSide=function(s){this.baseT=s?PI:0;this.yawT=0;this.dirty=true};
+Viewer.prototype.setSeason=function(w){
+ this.season=w?1:0;this.M.sky.map=skyTex(!!w);this.M.sky.needsUpdate=true;
+ this.r.setClearColor(w?0xE3EAEE:0xBFE0F1,1);
+ this.hemi.color.setHex(w?0xDCE6EE:0xFFFFFF);this.hemi.intensity=w?.62:.62;this.sun.intensity=w?.25:.62;this.sun.color.setHex(w?0xDDE8F5:0xFFF1DC);
+ this.snow.visible=!!w;this.updateFrost();this.dirty=true;
+};
+Viewer.prototype.frostLevel=function(){if(!this.season||!this.sp)return 0;return [.8,.38,0][this.sp.g]};
+Viewer.prototype.updateFrost=function(){this.frostT=this.frostLevel()};
+Viewer.prototype.mkSec=function(){
+ if(this.secG){this.sc.remove(this.secG.G);disp(this.secG.G)}
+ var s=buildSection(this.sp,this.M);s.G.scale.setScalar(.01*Math.max(.001,this.secA));s.G.position.set(0,-.6*Math.max(.001,this.secA),0);s.G.visible=this.secA>.01;this.sc.add(s.G);this.secG=s;
+ if(this.o.onSec)this.o.onSec(s);
+};
+Viewer.prototype.setSection=function(on){
+ this.sec=!!on;this.secT=on?1:0;if(on&&!this.secG)this.mkSec();
+ if(on){this.prevBase=this.baseT;this.baseT=0;this.yawT=0;this.pitchT=.1}else{this.baseT=this.prevBase||0;this.pitchT=.05}
+ this.dirty=true;
+};
+Viewer.prototype.setHl=function(on){this.hlOn=on?1:0;this.dirty=true};
+Viewer.prototype.zoomBy=function(f){this.zoomT=Math.max(.55,Math.min(1.9,this.zoomT*f));this.dirty=true};
+Viewer.prototype.resetView=function(){this.yawT=0;this.pitchT=this.sec?.1:.05;this.zoomT=1;this.dirty=true};
+/* камера */
+Viewer.prototype.updateCam=function(){
+ var sp=this.sp,asp=this.asp,tf=Math.tan(this.fov*PI/360),sa=this.secA,half,dist,yaw,pitch,cy=0;
+ if(this.hero){half=Math.max(sp.h/2+.3,(sp.w/2+.3)/asp);dist=half/tf*1.14;yaw=-.62+this.prog*.9+this.yawRel;pitch=.1}
+ else{
+  half=Math.max(sp.h/2+.32,(sp.w/2+.32)/asp);var d0=half/tf*this.zoom,ds=Math.max(.95/tf,(.62/asp)/tf)*Math.min(1.5,this.zoom*.9+.1);
+  dist=d0*(1-sa)+ds*sa;dist=Math.min(dist,this.baseT>1?3.9:6.5);
+  yaw=this.base+this.yawRel;pitch=this.pitch;
+ }
+ var cp=Math.cos(pitch);this.cam.position.set(dist*Math.sin(yaw)*cp,dist*Math.sin(pitch)+cy,dist*Math.cos(yaw)*cp);this.cam.lookAt(0,cy,0);
+};
+Viewer.prototype.heroApply=function(){
+ var P=this.P,p=this.prog,M=this.M,i;if(!P)return;
+ var e=ease(seg(p,0,.2));P.frame.forEach(function(m){var f=m.userData.from;m.position.set(f.x*(1-e),f.y*(1-e),f.z*(1-e))});
+ var e2=ease(seg(p,.2,.34));P.imp.forEach(function(m){m.scale.y=Math.max(.001,e2);m.visible=e2>.01});
+ P.parts.forEach(function(r,k){var e3=ease(seg(p,.34+k*.04,.52+k*.05));r.position.z=1.3*(1-e3);r.visible=e3>.01;r.scale.setScalar(.82+.18*e3)});
+ var e4=ease(seg(p,.58,.76));P.glass.forEach(function(g){g.visible=e4>.01;g.scale.set(1,Math.max(.01,e4),1)});
+ M.glass.opacity=.2*e4;M.glassE.opacity=.27*e4;M.glare.opacity=.75*e4;
+ var e5=ease(seg(p,.76,.9));P.hw.forEach(function(m){m.scale.setScalar(Math.max(.001,e5));m.visible=e5>.01});
+ var e6=ease(seg(p,.9,1));P.sashes.forEach(function(s,k){if(k===0){s.curT=s.tT=.55*e6;s.turn.rotation.y=-s.hs*s.curT}});
+};
+Viewer.prototype.setProgress=function(p){this.prog=p;if(this.P)this.heroApply();this.dirty=true};
+Viewer.prototype.frame=function(dt,now){
+ if(this.pend){this.apply()}
+ if(!this.P)return;
+ var d=this.dirty,k=Math.min(1,dt*6),i,s;
+ if(Math.abs(this.baseT-this.base)>.002){this.base+=(this.baseT-this.base)*Math.min(1,dt*4.5);d=true}else if(this.base!==this.baseT){this.base=this.baseT;d=true}
+ if(Math.abs(this.yawT-this.yawRel)>.001){this.yawRel+=(this.yawT-this.yawRel)*k;d=true}
+ if(Math.abs(this.pitchT-this.pitch)>.001){this.pitch+=(this.pitchT-this.pitch)*k;d=true}
+ if(Math.abs(this.zoomT-this.zoom)>.001){this.zoom+=(this.zoomT-this.zoom)*k;d=true}
+ if(!this.hero){
+  for(i=0;i<this.P.sashes.length;i++){s=this.P.sashes[i];
+   if(Math.abs(s.tT-s.curT)>.002||Math.abs(s.tL-s.curL)>.002||Math.abs(s.tV-s.curV)>.002){s.curT+=(s.tT-s.curT)*Math.min(1,dt*4);s.curL+=(s.tL-s.curL)*Math.min(1,dt*5);s.curV+=(s.tV-s.curV)*Math.min(1,dt*6);s.turn.rotation.y=-s.hs*s.curT;s.tilt.rotation.x=-s.curL;s.lever.rotation.z=s.curV;d=true}}
+  if(Math.abs(this.secT-this.secA)>.002){this.secA+=(this.secT-this.secA)*Math.min(1,dt*5);d=true;this.applySec()}
+  else if(this.secA!==this.secT){this.secA=this.secT;this.applySec();d=true}
+  if(this.secG&&this.secA>.5){var tg=this.hlOn;if(Math.abs(tg-this.hlA)>.01){this.hlA+=(tg-this.hlA)*Math.min(1,dt*6);d=true}
+   if(this.hlA>.02){this.t+=dt;var self=this;this.secG.hl.forEach(function(m,j){m.opacity=this.hlA*(.5+.2*Math.sin(self.t*3-j*.7))}.bind(this));this.secG.air.forEach(function(m){m.opacity=this.hlA*.45}.bind(this));d=true}
+   else if(this.hlA!==0||tg===0){this.secG.hl.forEach(function(m){m.opacity=0});this.secG.air.forEach(function(m){m.opacity=0})}}
+  if(Math.abs(this.frostT-this.frostA)>.004){this.frostA+=(this.frostT-this.frostA)*Math.min(1,dt*2.5);this.M.frost.opacity=this.frostA;d=true}
+  if(this.season&&this.snow.visible){this.snowAcc+=dt;if(this.snowAcc>(COARSE?.04:.02)){var a=this.snow.geometry.attributes.position,st=this.snowAcc;this.snowAcc=0;this.t+=st;
+    for(i=0;i<this.snowN;i++){var y=a.getY(i)-this.snowV[i]*st;if(y<-2.5)y=2.5;a.setY(i,y);a.setX(i,a.getX(i)+Math.sin(this.t*1.3+i)*.002)}a.needsUpdate=true;d=true}}
+ }
+ if(d){this.render();this.dirty=false}
+};
+Viewer.prototype.applySec=function(){
+ var a=Math.max(.001,this.secA);
+ if(this.W){this.W.scale.setScalar(Math.max(.001,1-a));this.W.visible=a<.985}
+ if(this.secG){this.secG.G.scale.setScalar(.01*a);this.secG.G.position.y=-.6*a;this.secG.G.visible=this.secA>.01}
+ if(this.skyM)this.skyM.visible=true;
+ if(this.o.onSecA)this.o.onSecA(this.secA);
+};
+Viewer.prototype.render=function(){
+ this.updateCam();this.r.render(this.sc,this.cam);
+ if(this.o.onRender)this.o.onRender(this);
+};
+Viewer.prototype.project=function(v){var p=v.clone().project(this.cam);return {x:(p.x*.5+.5)*this.cv.clientWidth,y:(-p.y*.5+.5)*this.cv.clientHeight,z:p.z}};
+Viewer.prototype.snapshot=function(){try{this.render();return this.cv.toDataURL('image/jpeg',.86)}catch(e){return ''}};
+/* ввод: вращение, масштаб щипком, нажатие на створку */
+Viewer.prototype.pick=function(e){
+ if(!this.P||this.secA>.3)return -1;
+ var rc=this.cv.getBoundingClientRect(),x=((e.clientX-rc.left)/rc.width)*2-1,y=-((e.clientY-rc.top)/rc.height)*2+1;
+ this.sc.updateMatrixWorld(true);this.rayc.setFromCamera(new T.Vector2(x,y),this.cam);
+ var h=this.rayc.intersectObjects(this.P.picks,false);return h.length?h[0].object.userData.cell:-1;
+};
+Viewer.prototype.showHl=function(i){
+ if(i<0||!this.P||!this.P.picks[i]){this.hlm.visible=false;this.dirty=true;return}
+ var pk=this.P.picks[i];this.hlm.visible=true;this.hlm.scale.set(pk.userData.cw,pk.userData.ch,1);this.hlm.position.copy(pk.position);this.hlm.position.z+=.004;this.hlm.position.applyMatrix4(this.W.matrixWorld);this.dirty=true;
+};
+Viewer.prototype.bind=function(){
+ var self=this,cv=this.cv,pts={},drag=null,pd=0;
+ function cnt(){return Object.keys(pts).length}
+ function d2(){var k=Object.keys(pts);if(k.length<2)return 0;var a=pts[k[0]],b=pts[k[1]];return Math.hypot(a.x-b.x,a.y-b.y)}
+ cv.addEventListener('pointerdown',function(e){
+  if(e.pointerType==='mouse'&&e.button!==0)return;
+  try{cv.setPointerCapture(e.pointerId)}catch(x){}
+  pts[e.pointerId]={x:e.clientX,y:e.clientY};
+  if(cnt()===1)drag={x:e.clientX,y:e.clientY,t:performance.now(),mv:0};else if(cnt()===2){pd=d2();drag=null}
+ });
+ cv.addEventListener('pointermove',function(e){
+  var p=pts[e.pointerId];
+  if(!p){if(e.pointerType==='mouse'&&self.P){var i=self.pick(e);cv.style.cursor=i>=0?'pointer':'grab';if(i!==self.hover){self.hover=i;self.showHl(i)}}return}
+  var dx=e.clientX-p.x,dy=e.clientY-p.y;p.x=e.clientX;p.y=e.clientY;
+  if(cnt()===2){var nd=d2();if(pd>0&&nd>0)self.zoomBy(pd/nd);pd=nd;return}
+  if(drag){drag.mv+=Math.abs(dx)+Math.abs(dy);var lim=self.sec?.7:.95;
+   self.yawT=Math.max(-lim,Math.min(lim,self.yawT-dx*.006));self.yawRel=self.yawT;
+   self.pitchT=Math.max(-.12,Math.min(.4,self.pitchT+dy*.003));self.pitch=self.pitchT;self.dirty=true}
+ });
+ function end(e){
+  var p=pts[e.pointerId];if(!p)return;delete pts[e.pointerId];
+  if(drag&&drag.mv<8&&performance.now()-drag.t<650&&e.type==='pointerup'){var i=self.pick(e);if(i>=0&&self.tapCb)self.tapCb(i)}
+  drag=null;pd=0;
+ }
+ cv.addEventListener('pointerup',end);cv.addEventListener('pointercancel',end);
+ cv.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse'&&self.hover>=0){self.hover=-1;self.showHl(-1)}});
+ cv.addEventListener('keydown',function(e){
+  var k=e.key,h=true;
+  if(k==='ArrowLeft')self.yawT=Math.max(-.95,self.yawT-.12);else if(k==='ArrowRight')self.yawT=Math.min(.95,self.yawT+.12);
+  else if(k==='ArrowUp')self.pitchT=Math.max(-.12,self.pitchT-.06);else if(k==='ArrowDown')self.pitchT=Math.min(.4,self.pitchT+.06);
+  else if(k==='+'||k==='=')self.zoomBy(.88);else if(k==='-'||k==='_')self.zoomBy(1.14);else if(k==='0')self.resetView();else h=false;
+  if(h){e.preventDefault();self.dirty=true}
+ });
+};
+
+/* =====================================================================
+   Интерфейс: конфигуратор, смета, тепло, каталог, замер, кабинет
+   ===================================================================== */
+var V=null,HV=null,CART=[],RM=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches);
+var toastT=0;
+function toast(m){var t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toastT);toastT=setTimeout(function(){t.classList.remove('on')},2600)}
+function grand(){
+ var items=CART.length?CART.map(function(c){return {n:c.n,s:c.s,r:calc(c.s,true)}}):[{n:'Окно из конфигуратора',s:S,r:calc(S,true)}];
+ var sum=items.reduce(function(a,x){return a+x.r.sum},0),dv=Math.round(sum*Math.min(S.disc,10)/100/100)*100;
+ return {items:items,sum:sum,dv:dv,total:sum-dv};
+}
+/* ---------- конфигуратор: интерфейс ---------- */
+var STEPS=['Проём','Размеры','Створки','Профиль','Цвет','Допы'];
+function build(){
+ $('#steps').innerHTML=STEPS.map(function(t,i){return '<button type="button" role="tab" data-s="'+i+'"><b>'+(i+1)+'</b>'+t+'</button>'}).join('');
+ $('#presets').innerHTML=PRESETS.map(function(p,i){var sv=winSVG({w:p.w,h:p.h,n:p.t.length,t:p.t.concat(['f','f']),c:0},{nodim:1});return '<button type="button" class="opt" data-i="'+i+'" aria-pressed="false"><span class="mi">'+sv.replace('role="img" aria-label="','aria-hidden="true" data-l="')+'</span><b>'+p.n+'</b><span>'+p.d+'</span></button>'}).join('');
+ $('#profs').innerHTML=PROF.map(function(p,i){return '<button type="button" class="opt" data-i="'+i+'" aria-pressed="false"><span class="mi">'+secSVG(i,1,{mini:1})+'</span><b>'+p.n+'</b><span>'+p.t+' · '+p.c+' '+pl(p.c,'камера','камеры','камер')+' · '+p.d+' мм · '+p.r.toLocaleString('ru-RU')+' ₽/м²</span></button>'}).join('');
+ $('#glass').innerHTML=GL.map(function(p,i){return '<button type="button" class="opt" data-i="'+i+'" aria-pressed="false"><b>'+p.n+'</b><span>'+p.t+', '+p.mm+' мм'+(p.s?' · +'+p.s.toLocaleString('ru-RU')+' ₽/м²':' · без доплаты')+'</span></button>'}).join('');
+ $('#cols').innerHTML=COL.map(function(p,i){return '<button type="button" class="swb" data-i="'+i+'" aria-pressed="false"><i style="background:'+p.c+'"></i><span><b>'+p.n+'</b><br><small>'+(p.k?'+15% к профилю':'без доплаты')+'</small></span></button>'}).join('');
+ $('#nseg').innerHTML=[1,2,3].map(function(i){return '<button type="button" data-n="'+i+'" aria-pressed="false">'+i+'</button>'}).join('');
+}
+function sashSel(){
+ var h='';for(var i=0;i<S.n;i++)h+='<div class="fld"><label for="ss'+i+'">Створка '+(i+1)+'</label><select class="sel" id="ss'+i+'" data-i="'+i+'">'+CYC.map(function(c){return '<option value="'+c+'"'+(S.t[i]===c?' selected':'')+'>'+FN[c]+(FUR[c]?' (+'+FUR[c].toLocaleString('ru-RU')+' ₽)':'')+'</option>'}).join('')+'</select></div>';
+ $('#sashsel').innerHTML=h;
+}
+function specFromS(){return {w:S.w/1000,h:S.h/1000,n:S.n,t:S.t.slice(0,3),D:PROF[S.p].d/1000,c:S.c,g:S.g,pi:S.p,sill:+S.sill,ebb:!!S.ebb,slope:+S.slope,mesh:!!S.mesh&&nOpen(S)>0}}
+var lastKey='';
+function sync3d(force){
+ if(!V)return;var sp=specFromS(),k=JSON.stringify(sp);if(k===lastKey&&!force)return;lastKey=k;V.setSpec(sp);
+ $('#cv').setAttribute('aria-label','Интерактивная 3D-модель окна '+S.w+' на '+S.h+' мм, створок '+S.n+', профиль '+PROF[S.p].n+'. Стрелки поворачивают окно, плюс и минус приближают.');
+}
+function secInfo(){
+ var pr=PROF[S.p],g=GL[S.g],G=Math.min(g.mm,pr.d-22),R=(pr.R+g.R).toFixed(2).replace('.',',');
+ $('#secList').innerHTML='<li><b>Профиль:</b> '+pr.n+', толщина '+pr.d+' мм, '+pr.c+' '+pl(pr.c,'камера','камеры','камер')+'. Перегородки между камерами держат тепло.</li><li><b>Стальной вкладыш</b> в главной камере держит створку и фурнитуру.</li><li><b>Стеклопакет:</b> '+g.n.toLowerCase()+', '+G+' мм, '+g.t+(S.g===2?', тёплая рамка':'')+'.</li><li><b>Уплотнитель</b> по контуру стекла и створки не пускает воздух.</li><li><b>Условное сопротивление теплопередаче окна:</b> R = '+R+' м²·°C/Вт (демо-значение).</li>';
+ $('#secSvg').innerHTML=secSVG(S.p,S.g);
+}
+function render(){
+ var sch=$('#fb');sch.innerHTML=winSVG(S,{click:true,big:true});
+ $$('.pane').forEach(function(p){p.classList.toggle('on',+p.dataset.p===S.step)});
+ $$('#steps button').forEach(function(b){b.setAttribute('aria-current',+b.dataset.s===S.step?'step':'false');b.setAttribute('aria-selected',+b.dataset.s===S.step)});
+ $('#prev').disabled=S.step===0;$('#next').textContent=S.step===5?'К замеру':'Дальше';
+ $$('#presets .opt').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.sel==='1')});
+ $$('#profs .opt').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.i===S.p)});
+ $$('#glass .opt').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.i===S.g)});
+ $$('#cols .swb').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.i===S.c)});
+ $$('#nseg button').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.n===S.n)});
+ if(document.activeElement!==$('#wn')){$('#wn').value=S.w}$('#wr').value=S.w;if(document.activeElement!==$('#hn')){$('#hn').value=S.h}$('#hr').value=S.h;
+ $('#areaNote').textContent='Площадь '+(S.w*S.h/1e6).toFixed(2).replace('.',',')+' м²'+(S.w*S.h<1e6?'. Для расчёта берётся минимум 1 м².':'.');
+ var r=calc(S);
+ $('#lines').innerHTML=r.L.map(function(x){return '<li><span>'+x.l+(x.sm?'<small>'+x.sm+'</small>':'')+'</span><span class="num">'+fmt(x.v)+'</span></li>'}).join('')+(r.dv?'<li class="disc"><span>Скидка по промокодам<small>'+Math.min(S.disc,10)+'%</small></span><span class="num">−'+fmt(r.dv)+'</span></li>':'');
+ $('#total').textContent=fmt(r.total);$('#hudTotal').textContent=fmt(r.total);$('#hudSize').textContent=S.w+' × '+S.h+' мм';
+ renderCart();
+ var g=grand();
+ var pp=Math.round(g.total*.1/10)*10;$('#prepay').textContent=fmt(pp);$('#prepNote').textContent=g.total?'10% от суммы '+fmt(g.total)+(CART.length?' по смете квартиры.':' из конфигуратора.'):'';
+ setInst(g.total);
+ var ss=CART.length?'Смета квартиры: '+CART.length+' '+pl(CART.length,'окно','окна','окон')+', итого '+fmt(g.total):specText(S)+', итого '+fmt(g.total);
+ $('#bsum').textContent='Ваше окно: '+ss+'.';$('#bsum').dataset.t=ss;
+ if(CART.length)$('#bsum').textContent='Ваша смета: '+ss.replace('Смета квартиры: ','')+'.';
+ secInfo();drawHeat();sync3d();
+}
+function renderCart(){
+ var g=grand();
+ $('#cartList').innerHTML=CART.length?CART.map(function(c,i){var r=calc(c.s,true);return '<li><span>'+esc(c.n)+'<small>'+esc(PROF[c.s.p].n)+', '+esc(GL[c.s.g].n.toLowerCase())+'</small></span><span class="num">'+fmt(r.sum)+'</span><button type="button" data-rm="'+i+'" aria-label="Убрать окно '+(i+1)+' из сметы">✕</button></li>'}).join(''):'<li class="empty">Пока пусто. Соберите окно и добавьте его в смету, затем соберите следующее.</li>';
+ $('#gtot').hidden=!CART.length;$('#gsum').textContent=fmt(g.total);
+}
+function setPreset(p,i){S.w=p.w;S.h=p.h;S.n=p.t.length;S.t=p.t.concat(['f','f','f']).slice(0,3);S.p=p.p;S.g=p.g;$$('#presets .opt').forEach(function(b){b.dataset.sel=(+b.dataset.i===i)?'1':'0'})}
+function bindCfg(){
+ $('#steps').onclick=function(e){var b=e.target.closest('button');if(b){S.step=+b.dataset.s;render()}};
+ $('#prev').onclick=function(){if(S.step>0){S.step--;render()}};
+ $('#next').onclick=function(){if(S.step<5){S.step++;render()}else location.hash='#zamer'};
+ $('#presets').onclick=function(e){var b=e.target.closest('.opt');if(!b)return;setPreset(PRESETS[+b.dataset.i],+b.dataset.i);sashSel();S.step=1;render()};
+ $('#profs').onclick=function(e){var b=e.target.closest('.opt');if(b){S.p=+b.dataset.i;render()}};
+ $('#glass').onclick=function(e){var b=e.target.closest('.opt');if(b){S.g=+b.dataset.i;render()}};
+ $('#cols').onclick=function(e){var b=e.target.closest('.swb');if(b){S.c=+b.dataset.i;render()}};
+ $('#nseg').onclick=function(e){var b=e.target.closest('button');if(b){S.n=+b.dataset.n;sashSel();render()}};
+ function num(id,key,min,max){var f=function(e){var v=Math.max(min,Math.min(max,Math.round(+e.target.value/10)*10||min));if(e.type==='change'||e.target.type==='range'){S[key]=v;clearSel();render()}};$(id+'r').addEventListener('input',f);$(id+'n').addEventListener('change',f)}
+ num('#w','w',400,2400);num('#h','h',400,2200);
+ $('#sashsel').onchange=function(e){var i=+e.target.dataset.i;S.t[i]=e.target.value;render()};
+ $('#fb').onclick=function(e){var g=e.target.closest('.sashg');if(!g)return;cycleSash(+g.dataset.i)};
+ ['sill','slope'].forEach(function(id){$('#'+id).onchange=function(e){S[id]=+e.target.value;render()}});
+ ['ebb','mesh','mount','dem','trash','lift'].forEach(function(id){$('#'+id).onchange=function(e){S[id]=e.target.checked;render()}});
+ $('#fl').onchange=function(e){S.fl=Math.max(1,Math.min(25,+e.target.value||1));render()};
+ $$('.pr').forEach(function(c){c.onchange=function(){S.disc=$$('.pr').reduce(function(a,x){return a+(x.checked?+x.dataset.v:0)},0);render()}});
+ $('#ebb').checked=S.ebb;$('#mesh').checked=S.mesh;$('#mount').checked=S.mount;$('#lift').checked=S.lift;$('#sill').value=S.sill;
+ $('#addCart').onclick=function(){if(CART.length>=8){toast('В смете уже 8 окон');return}CART.push({n:'Окно '+(CART.length+1)+' · '+S.w+'×'+S.h,s:copyS(S)});render();toast('Окно '+CART.length+' добавлено в смету')};
+ $('#cartList').onclick=function(e){var b=e.target.closest('[data-rm]');if(b){CART.splice(+b.dataset.rm,1);CART.forEach(function(c,i){c.n=c.n.replace(/^Окно \d+/,'Окно '+(i+1))});render()}};
+ $('#toPdf').onclick=printEstimate;
+}
+function clearSel(){$$('#presets .opt').forEach(function(b){b.dataset.sel='0'})}
+function cycleSash(i){
+ if(i>=S.n)return;S.t[i]=CYC[(CYC.indexOf(S.t[i])+1)%3];clearSel();sashSel();
+ var f=FUR[S.t[i]];toast('Створка '+(i+1)+': '+FN[S.t[i]].toLowerCase()+(f?' (+'+f.toLocaleString('ru-RU')+' ₽)':''));render();
+}
+/* ---------- 3D: запуск и режимы ---------- */
+function failGL(){
+ $('.cfgL').classList.add('nogl');V=null;$('#loadMsg').classList.add('off');
+ $('#secinfo').classList.add('on');$('#secinfo h3').textContent='Профиль в разрезе (схема)';
+ try{render()}catch(e){}
+}
+var pinEls=[];
+function onSec(s){
+ var h='';pinEls=[];
+ s.pins.forEach(function(p,i){h+='<div class="pin'+(p.s<0?' r':'')+'" data-i="'+i+'"><i></i><span>'+esc(p.t)+'</span></div>'});
+ $('#pins').innerHTML=h;
+ $$('#pins .pin').forEach(function(el,i){pinEls.push({el:el,p:new T.Vector3(s.pins[i].p[0],s.pins[i].p[1],s.pins[i].p[2]),s:s.pins[i].s})});
+}
+function onRender(v){
+ if(!pinEls.length)return;var a=v.secA,on=a>.92;
+ pinEls.forEach(function(q){
+  if(!on){q.el.classList.remove('on');return}
+  var w=q.p.clone().multiplyScalar(.01*a);w.y-=.6*a;var s=v.project(w);
+  q.el.style.transform='translate('+s.x.toFixed(1)+'px,'+s.y.toFixed(1)+'px) translate('+(q.s<0?'-100%':'0')+',-50%)';q.el.classList.add('on');
+ });
+}
+function setPressed(sel,attr,val){$$(sel).forEach(function(b){b.setAttribute('aria-pressed',b.dataset[attr]===String(val))})}
+function init3d(){
+ if(!window.THREE){failGL();return}
+ try{V=new Viewer($('#cv'),{onLost:failGL,onSec:onSec,onRender:onRender})}catch(e){failGL();return}
+ V.tapCb=cycleSash;$('#loadMsg').classList.add('off');
+ $('#chips').addEventListener('click',function(e){
+  var b=e.target.closest('button');if(!b||!V)return;
+  if(b.dataset.side!==undefined){V.setSide(+b.dataset.side);setPressed('[data-side]','side',b.dataset.side)}
+  else if(b.dataset.sea!==undefined){var w=+b.dataset.sea;V.setSeason(w);setPressed('[data-sea]','sea',w);if(w){var ph=GL[S.g].np===2&&S.g===0;toast(S.g===2?'Зима: энергосберегающий стеклопакет остаётся чистым':'Зима: смотрите изнутри, на стекле иней')}}
+  else if(b.dataset.open){V.setOpen(b.dataset.open);setPressed('[data-open]','open',b.dataset.open);
+   var hasK=S.t.slice(0,S.n).indexOf('k')>=0,hasO=nOpen(S)>0;
+   if(b.dataset.open==='tilt'&&!hasK)toast('Откидное есть только у поворотно-откидной створки');else if(b.dataset.open==='turn'&&!hasO)toast('Все створки глухие, открывать нечего');else if(b.dataset.open==='tilt')toast('Откидное: верх створки наклоняется внутрь, проветривание щелью');else if(b.dataset.open==='turn')toast('Поворотное: створка открывается как дверь')}
+  else if(b.id==='secBtn'){var on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);V.setSection(on);setPressed('[data-side]','side',V.baseT>1?1:0);$('#secHl').hidden=!on;$('#secinfo').classList.toggle('on',on);if(!on){$('#secHl').setAttribute('aria-pressed','false');V.setHl(false)}}
+  else if(b.id==='secHl'){var o2=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',o2);V.setHl(o2)}
+ });
+ $('#zin').onclick=function(){V.zoomBy(.85)};$('#zout').onclick=function(){V.zoomBy(1.18)};$('#zrst').onclick=function(){V.resetView()};
+ sync3d(true);
+}
+/* ---------- тепло ---------- */
+var HREF=[{n:'Старое деревянное окно',R:.35,cl:'old'},{n:'ProWIN 58, 1-камерный',R:.50},{n:'KBE Expert 70, 2-камерный',R:.68},{n:'Grazio 70, 2-камерный',R:.72},{n:'Softline 82, энергосберегающий',R:.80}];
+function drawHeat(){
+ var Sq=S.w*S.h/1e6,to=+$('#tout').value,dT=20-to,mine={n:'Ваше окно: '+PROF[S.p].n+', '+GL[S.g].n.toLowerCase(),R:PROF[S.p].R+GL[S.g].R,cl:'me'};
+ var rows=[HREF[0],mine].concat(HREF.slice(1)),qmax=Sq*dT/HREF[0].R;
+ $('#toutV').textContent=String(to).replace('-','−');
+ $('#hbars').innerHTML=rows.map(function(r){var q=Sq*dT/r.R;return '<div class="hb '+(r.cl||'')+'"><div class="t"><span>'+esc(r.n)+'<small style="color:var(--mute)"> · R '+r.R.toFixed(2).replace('.',',')+'</small></span><b class="num">'+Math.round(q)+' Вт</b></div><div class="bar"><i style="width:'+(q/qmax*100).toFixed(1)+'%"></i></div></div>'}).join('');
+ var qo=Sq*dT/HREF[0].R,qm=Sq*dT/mine.R,kwh=Sq*26.5*(1/HREF[0].R-1/mine.R)*24*218/1000,rub=kwh*3;
+ $('#hnote').innerHTML='Окно <b>'+S.w+'×'+S.h+' мм</b> ('+Sq.toFixed(2).replace('.',',')+' м²) при '+String(to).replace('-','−')+' °C на улице теряет <b>'+Math.round(qm)+' Вт</b> вместо '+Math.round(qo)+' Вт у старого деревянного. За отопительный сезон (около 218 дней, средняя −6,5 °C) разница порядка <b>'+Math.round(kwh/10)*10+' кВт·ч</b>, это около <b>'+fmt(Math.round(rub/50)*50)+'</b> при условных 3 ₽ за кВт·ч. Ориентир для сравнения, а не обещание экономии.';
+}
+/* ---------- каталог ---------- */
+var CAT=[
+ {n:'Кухонное «Мини»',w:600,h:900,t:['k'],p:0,g:0,d:3,b:'Старт цен',f:1},
+ {n:'Глухое «Витрина»',w:800,h:1160,t:['f'],p:0,g:0,d:3,f:1},
+ {n:'Одностворчатое «Комфорт»',w:900,h:1400,t:['k'],p:1,g:1,d:4,b:'Хит',f:1},
+ {n:'Двустворчатое «Стандарт»',w:1300,h:1400,t:['k','f'],p:1,g:1,d:4,b:'Хит',f:2},
+ {n:'Двустворчатое «Две поворотных»',w:1300,h:1400,t:['k','k'],p:2,g:1,d:5,f:2},
+ {n:'Двустворчатое «Тихое»',w:1300,h:1400,t:['k','f'],p:3,g:2,d:5,b:'Новинка',f:2},
+ {n:'Спальня «Эконом»',w:1500,h:1400,t:['k','f'],p:0,g:0,d:3,f:2},
+ {n:'Трёхстворчатое «Зал»',w:2080,h:1500,t:['t','f','k'],p:1,g:1,d:5,f:3},
+ {n:'Трёхстворчатое «Тёплое»',w:2100,h:1400,t:['k','f','t'],p:2,g:2,d:6,b:'Новинка',f:3},
+ {n:'Премиум «Максимум»',w:1300,h:1400,t:['k','k'],p:4,g:2,d:7,b:'Премиум',f:2},
+ {n:'Остекление лоджии, тёплое',w:3200,h:1500,t:['t','f','f'],p:2,g:1,d:10,b:'Хит',f:4,fixed:37900,sp:'ПВХ распашное, REHAU Grazio 70, 3200×1500'},
+ {n:'Замена стеклопакета, регулировка',d:1,b:'Малый заказ',f:5,fixed:1500,from:1,sp:'Малые заказы тоже берём'}
+];
+var FILT=[['0','Все'],['1','Одна створка'],['2','Две створки'],['3','Три створки'],['4','Лоджии'],['5','Малые заказы']];
+function mkCat(){
+ $('#fil').innerHTML=FILT.map(function(f,i){return '<button type="button" data-f="'+f[0]+'" aria-pressed="'+(i===0)+'">'+f[1]+'</button>'}).join('');
+ $('#cat').innerHTML=CAT.map(function(c,i){
+  var price,spec;
+  if(c.fixed){price=c.fixed;spec=c.sp}else{var s={w:c.w,h:c.h,n:c.t.length,t:c.t.concat(['f','f']),p:c.p,g:c.g,c:0,sill:200,slope:0,ebb:true,mesh:true,mount:true,dem:false,trash:false,fl:1,lift:true,disc:0};price=calc(s).total;spec=PROF[c.p].n+', '+GL[c.g].n.toLowerCase()+', '+c.w+'×'+c.h;c.s=s}
+  var pic=c.fixed?(c.f===4?winSVG({w:3200,h:1500,n:3,t:['t','k','t'],c:0},{nodim:1,big:1}):'<svg viewBox="0 0 120 100" aria-hidden="true"><rect x="22" y="14" width="76" height="72" rx="4" fill="#fff" stroke="#9FB3BB" stroke-width="3"/><rect x="30" y="22" width="60" height="56" fill="#CFE5EE"/><path d="M60 30 70 40 62 48 70 56" fill="none" stroke="#10242C" stroke-width="2"/></svg>'):winSVG(c.s,{nodim:1,big:1});
+  var btn=c.fixed?'<a class="btn line sm" href="'+waLink('Здравствуйте, интересует: '+c.n)+'" target="_blank" rel="noopener">Узнать в WhatsApp</a>':'<button type="button" class="btn line sm" data-c="'+i+'">Открыть в 3D</button>';
+  return '<article class="ci" data-f="'+c.f+'"><div class="pic">'+(c.b?'<span class="bdg">'+c.b+'</span>':'')+pic+'</div><div class="bd"><h3>'+c.n+'</h3><p>'+spec+'</p><p>Срок: '+c.d+' '+pl(c.d,'день','дня','дней')+'</p><div class="pr"><b class="num">'+(c.from?'от ':'')+fmt(price)+'</b><span>'+(c.from?'работа':'под ключ')+'</span></div>'+btn+'</div></article>';
+ }).join('');
+ $('#fil').onclick=function(e){var b=e.target.closest('button');if(!b)return;$$('#fil button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});$$('#cat .ci').forEach(function(a){a.hidden=!(b.dataset.f==='0'||a.dataset.f===b.dataset.f)})};
+ $('#cat').onclick=function(e){var b=e.target.closest('[data-c]');if(!b)return;var c=CAT[+b.dataset.c];S.w=c.w;S.h=c.h;S.n=c.t.length;S.t=c.t.concat(['f','f','f']).slice(0,3);S.p=c.p;S.g=c.g;clearSel();sashSel();S.step=3;render();location.hash='#config'};
+ $('#anchorPrice').textContent=fmt(calc(CAT[3].s).total);
+}
+/* ---------- работы ---------- */
+var WK=[['img/1736593319421-250e17bb2f11.jpg','Спальня с тремя окнами','Центральный район, дом 1960-х','2080×1500, KBE Expert 70','5 дней, монтаж 1 день','28 100 ₽'],
+['img/1634672050277-16639332c727.jpg','Кухня в новостройке','Курчатовский район','900×1400, KBE Expert 70','4 дня, монтаж 1 день','13 600 ₽'],
+['img/1633369918397-ea852fe4e091.jpg','Спальня, два окна','Ленинский район','2 × 1300×1400, KBE Expert 70','5 дней, монтаж 1 день','2 × 16 900 ₽'],
+['img/1613013441633-785518cf90b3.jpg','Остекление лоджии','Советский район','3200×1500, REHAU Grazio 70','10 дней, монтаж 2 дня','37 900 ₽'],
+['img/1751486403820-7cf45ebec080.jpg','Монтаж в многоэтажке','Тракторозаводский район','1300×1400, EXPROF ProWIN 58','3 дня, монтаж 1 день','16 000 ₽'],
+['img/1632120669818-ed5498030e32.jpg','Гостиная в частном доме','Сосновский район','2 окна 2100×1400, VEKA Softline 70','6 дней, монтаж 1 день','2 × 33 000 ₽']];
+function mkWorks(){$('#works').innerHTML=WK.map(function(w){return '<article class="wk"><div class="im"><img src="'+w[0]+'" width="700" height="525" loading="lazy" alt="'+w[1]+', '+w[2]+'"></div><div class="bd"><h3>'+w[1]+'</h3><ul><li><b>'+w[2]+'</b></li><li>'+w[3]+'</li><li>'+w[4]+'</li><li>Стоимость: <b class="num">'+w[5]+'</b></li></ul></div></article>'}).join('')}
+/* ---------- календарь и файл .ics ---------- */
+function p2(n){return (n<10?'0':'')+n}
+function icsDate(d){return d.getFullYear()+p2(d.getMonth()+1)+p2(d.getDate())+'T'+p2(d.getHours())+p2(d.getMinutes())+'00'}
+function icsDay(d){return d.getFullYear()+p2(d.getMonth()+1)+p2(d.getDate())}
+function icsT(s){return String(s).replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\r?\n/g,'\\n')}
+function mkIcs(o){
+ var L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Ramus//Demo//RU','CALSCALE:GREGORIAN','BEGIN:VEVENT','UID:'+Date.now()+Math.floor(Math.random()*1e6)+'@ramus.demo','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d+/,'')];
+ if(o.day){L.push('DTSTART;VALUE=DATE:'+icsDay(o.start),'DTEND;VALUE=DATE:'+icsDay(new Date(o.start.getTime()+864e5)))}else L.push('DTSTART:'+icsDate(o.start),'DTEND:'+icsDate(o.end));
+ L.push('SUMMARY:'+icsT(o.title),'LOCATION:'+icsT(o.loc),'DESCRIPTION:'+icsT(o.desc),'BEGIN:VALARM','TRIGGER:'+(o.day?'-PT15H':'-PT1H'),'ACTION:DISPLAY','DESCRIPTION:'+icsT(o.title),'END:VALARM','END:VEVENT','END:VCALENDAR');
+ return L.join('\r\n')+'\r\n';
+}
+function saveFile(name,text){var b=new Blob([text],{type:'text/calendar;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},600)}
+/* ---------- замер ---------- */
+var D=[['Центральный',0],['Курчатовский',0],['Ленинский',0],['Металлургический',0],['Советский',0],['Тракторозаводский',0],['Калининский',0],['Копейск',500],['Сосновский р-н',700],['Аргаяшский р-н',900]];
+var SL=['9–11','11–13','13–15','15–17','17–19','19–21'],SH=[9,11,13,15,17,19],B={d:0,day:-1,slot:-1,ts:0};
+function busy(day,slot){return ((day*7+slot*3+B.d*2)%5)===0}
+function mkBook(){
+ $('#dist').innerHTML=D.map(function(d,i){return '<button type="button" data-i="'+i+'" aria-pressed="'+(i===0)+'">'+d[0]+'<small>'+(d[1]?'выезд '+d[1]+' ₽, засчитаем в заказ':'выезд бесплатно')+'</small></button>'}).join('');
+ drawCal();drawSlots();
+ $('#dist').onclick=function(e){var b=e.target.closest('button');if(!b)return;B.d=+b.dataset.i;$$('#dist button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});B.slot=-1;drawCal();drawSlots()};
+ $('#cal').onclick=function(e){var b=e.target.closest('button');if(!b||b.disabled)return;B.day=+b.dataset.i;B.ts=+b.dataset.ts;B.slot=-1;drawCal();drawSlots()};
+ $('#slots').onclick=function(e){var b=e.target.closest('button');if(!b||b.disabled)return;B.slot=+b.dataset.i;drawSlots()};
+ $('#bform').onsubmit=function(e){e.preventDefault();var er=$('#berr'),n=$('#bn').value.trim(),p=$('#bp').value.replace(/\D/g,'');
+  if(B.day<0||B.slot<0){er.textContent='Выберите день и время замера.';return}
+  if(!n){er.textContent='Укажите имя.';$('#bn').focus();return}
+  if(p.length<10){er.textContent='Проверьте телефон: нужно минимум 10 цифр.';$('#bp').focus();return}
+  if(!$('#bc').checked){er.textContent='Нужно согласие на обработку персональных данных.';return}
+  er.textContent='';var dt=new Date(B.ts),ds=dt.toLocaleDateString('ru-RU',{day:'numeric',month:'long',weekday:'long'}),txt='Замер: '+ds+', '+SL[B.slot]+', '+D[B.d][0]+(D[B.d][1]?' (выезд '+D[B.d][1]+' ₽)':'');
+  var msg='Здравствуйте! Хочу записаться на замер. '+txt+'. Имя: '+n+', телефон: '+$('#bp').value+(($('#ba').value)?', адрес: '+$('#ba').value:'')+'. '+($('#bsum').dataset.t?'Окно: '+$('#bsum').dataset.t+'.':'');
+  $('#bt').textContent=txt+'. Добавьте визит в календарь и отправьте заявку менеджеру кнопкой ниже.';$('#bwa').href=waLink(msg);
+  var st=new Date(dt.getFullYear(),dt.getMonth(),dt.getDate(),SH[B.slot],0),en=new Date(dt.getFullYear(),dt.getMonth(),dt.getDate(),SH[B.slot]+2,0);
+  $('#bics').onclick=function(){saveFile('zamer-ramus.ics',mkIcs({start:st,end:en,title:'Замер окон, Рамус',loc:($('#ba').value||'Челябинск, '+D[B.d][0]),desc:'Мастер позвонит за 30 минут. '+($('#bsum').dataset.t||'')+' Цена предварительная, итог в договоре. Телефон +7 777 777-77-77.'}))};
+  $('#bres').classList.add('on');$('#bres').scrollIntoView({block:'nearest',behavior:RM?'auto':'smooth'})};
+}
+function drawCal(){
+ var wd=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'],now=new Date(),h='',first=new Date(now.getFullYear(),now.getMonth(),now.getDate()+1),off=(first.getDay()+6)%7,i;
+ var mn=['январь','февраль','март','апрель','май','июнь','июль','август','сентябрь','октябрь','ноябрь','декабрь'],last=new Date(first.getFullYear(),first.getMonth(),first.getDate()+13);
+ $('#calm').textContent=mn[first.getMonth()]+(last.getMonth()!==first.getMonth()?' – '+mn[last.getMonth()]:'')+' '+last.getFullYear();
+ for(i=0;i<off;i++)h+='<i aria-hidden="true"></i>';
+ for(i=0;i<14;i++){var t=new Date(first.getFullYear(),first.getMonth(),first.getDate()+i),fr=0,k;for(k=0;k<6;k++)if(!busy(i,k))fr++;
+  h+='<button type="button" data-i="'+i+'" data-ts="'+t.getTime()+'" aria-pressed="'+(B.day===i)+'" aria-label="'+t.getDate()+' '+wd[t.getMonth()]+', свободно '+fr+' из 6"'+(fr?'':' disabled')+'>'+t.getDate()+'<small>'+fr+' св.</small></button>'}
+ $('#cal').innerHTML=h;
+}
+function drawSlots(){$('#slots').innerHTML=SL.map(function(s,i){var off=B.day<0||busy(B.day,i);return '<button type="button" data-i="'+i+'" '+(off?'disabled ':'')+'aria-pressed="'+(B.slot===i)+'">'+s+'</button>'}).join('')}
+/* ---------- оплата и рассрочка ---------- */
+var I={pre:0,m:5,edit:false};
+function setInst(total){var ia=$('#iamt');if(!I.edit&&total){ia.value=total}instCalc()}
+function instCalc(){var a=Math.max(0,+$('#iamt').value||0),pv=Math.round(a*I.pre/100);$('#ipv').textContent=fmt(pv);$('#imo').textContent=fmt((a-pv)/I.m);$$('#ipre button').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.v===I.pre)});$$('#imon button').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.v===I.m)})}
+function mkInst(){
+ $('#ipre').innerHTML=[0,10,20,30].map(function(v){return '<button type="button" data-v="'+v+'" aria-pressed="false">'+v+'%</button>'}).join('');
+ $('#imon').innerHTML=[3,4,5,6].map(function(v){return '<button type="button" data-v="'+v+'" aria-pressed="false">'+v+'</button>'}).join('');
+ $('#ipre').onclick=function(e){var b=e.target.closest('button');if(b){I.pre=+b.dataset.v;instCalc()}};
+ $('#imon').onclick=function(e){var b=e.target.closest('button');if(b){I.m=+b.dataset.v;instCalc()}};
+ $('#iamt').addEventListener('input',function(){I.edit=true;instCalc()});
+ instCalc();
+}
+function mkPay(){
+ var d=$('#payd'),qr=$('#qrg'),h='',i,j,sd=7;for(i=0;i<21;i++)for(j=0;j<21;j++){sd=(sd*131+17)%251;var fin=(i<7&&j<7)||(i<7&&j>13)||(i>13&&j<7);if(fin){var ei=i%14,ej=j%14;var on=(ei===0||ei===6||ej===0||ej===6||(ei>1&&ei<5&&ej>1&&ej<5));if(on)h+='<rect x="'+j+'" y="'+i+'" width="1" height="1"/>'}else if(sd%2)h+='<rect x="'+j+'" y="'+i+'" width="1" height="1"/>'}
+ qr.innerHTML=h;
+ $('#openPay').onclick=function(){$('#pdt').textContent='Предоплата '+$('#prepay').textContent;$('#doPay').textContent='Оплатить '+$('#prepay').textContent+' (демо)';$('#pres').classList.remove('on');if(d.showModal)d.showModal();else d.setAttribute('open','')};
+ $('#closePay').onclick=function(){if(d.close)d.close();else d.removeAttribute('open')};
+ $('.tabs2',d).onclick=function(e){var b=e.target.closest('button');if(!b)return;$$('.tabs2 button',d).forEach(function(x){x.setAttribute('aria-pressed',x===b)});$('#pcard').hidden=b.dataset.m!=='card';$('#psbp').hidden=b.dataset.m!=='sbp'};
+ $('#doPay').onclick=function(){$('#pres').classList.add('on')};
+}
+/* ---------- смета в PDF через печать ---------- */
+function printEstimate(){
+ var g=grand(),d=new Date(),until=new Date(d.getTime()+14*864e5),h='<h2>Рамус: смета на окна ПВХ</h2><div class="sm">'+d.toLocaleDateString('ru-RU')+' · предварительный расчёт по 3D-конфигуратору. Действует до '+until.toLocaleDateString('ru-RU')+'. Итог фиксируется в договоре после замера.</div>';
+ g.items.forEach(function(it,k){
+  var pic=(!CART.length&&V)?'<img class="pl" src="'+V.snapshot()+'" alt="Окно из 3D-конфигуратора">':winSVG(it.s,{big:true});
+  h+='<h3>'+esc(it.n)+'</h3><div class="pi">'+pic+'<div class="sm">'+esc(specText(it.s))+'</div></div>';
+  h+='<table><tr><th>Статья</th><th>Сумма</th></tr>'+it.r.L.map(function(x){return '<tr><td>'+esc(x.l)+(x.sm?'<br><span class="sm">'+esc(x.sm)+'</span>':'')+'</td><td>'+fmt(x.v)+'</td></tr>'}).join('')+'<tr class="tt"><td>Итого за окно</td><td>'+fmt(it.r.sum)+'</td></tr></table>';
+ });
+ if(g.dv)h+='<table><tr><td>Скидка по промокодам, '+Math.min(S.disc,10)+'%</td><td>−'+fmt(g.dv)+'</td></tr></table>';
+ h+='<table><tr class="tt"><td>Итого под ключ</td><td>'+fmt(g.total)+'</td></tr></table>';
+ h+='<p>Предоплата 10%: <b>'+fmt(Math.round(g.total*.1/10)*10)+'</b>, остаток после монтажа и акта. Возможна рассрочка 0% на 3–6 месяцев. Гарантия 5 лет на изделие и монтаж.</p><p class="sm">Рамус · г. Челябинск, Ваш адрес · +7 777 777-77-77 · WhatsApp и Telegram. Все данные на сайте — образец, расчёт не является офертой.</p>';
+ $('#printSheet').innerHTML=h;setTimeout(function(){window.print()},80);
+}
+/* ---------- кабинет клиента ---------- */
+function dd(n){var t=new Date();t=new Date(t.getFullYear(),t.getMonth(),t.getDate()+n);return t.toLocaleDateString('ru-RU',{day:'numeric',month:'long'})}
+function mkCab(){
+ var ST=[['Замер','Мастер перемерил проёмы и сверил со сметой с сайта: размеры совпали',-9,'d'],['Договор и предоплата 10%','Цена, срок и гарантия на одной странице, предоплата закрепила цену',-8,'d'],['Изготовление','Окна в цеху: профиль нарезан, стеклопакеты собраны, идёт сборка створок',-4,'n'],['Доставка','Привезём накануне монтажа и позвоним за час',1,''],['Монтаж','Бригада ставит окна за один день и убирает мусор',2,''],['Приёмка и оплата остатка','Подписываем акт, выдаём гарантийный талон и паспорт изделий',2,'']];
+ $('#stg').innerHTML=ST.map(function(s,i){return '<li class="'+s[3]+'"><i>'+(s[3]==='d'?'✓':i+1)+'</i><span>'+s[0]+'<small>'+s[1]+'</small></span><span class="tm">'+(s[3]==='n'?'в работе':dd(s[2]))+'</span></li>'}).join('');
+ var pc=Math.round((2+.6)/6*100);$('#ringT').textContent=pc+'%';$('#ringC').setAttribute('stroke-dasharray',pc+' 100');
+ var PH=[['img/1589939705384-5185137a7f0f.jpg','Замер проёмов','Замер'],['img/1626885930974-4b69aa21bbf9.jpg','Бригада на объекте: сверка размеров','Договор'],['img/1730718934488-2857906d23d2.jpg','Фурнитура: ручка и петли','Производство'],['img/1569216961559-fd512349ebba.jpg','Проверка открывания створки','Производство'],['img/1750658080060-54668f9dd29a.jpg','Кухня, как будет после монтажа','Образец'],['img/1643913590311-e92892c2f611.jpg','Спальня, как будет после монтажа','Образец']];
+ $('#lkPh').innerHTML=PH.map(function(p){return '<figure><img src="'+p[0]+'" width="400" height="300" loading="lazy" alt="'+p[1]+'"><figcaption><b>'+p[1]+'</b>Этап: '+p[2]+'</figcaption></figure>'}).join('');
+ var DOC=[['Договор №РМ-2026-0143','PDF, подписан','ok'],['Смета с расчётом по формуле','PDF, строки совпадают с сайтом','ok'],['Чек самозанятого за предоплату','Мой налог, отправлен на почту','ok'],['Паспорт изделий','профиль, стеклопакет, номер партии: после изготовления',''],['Гарантийный талон','выдаём при приёмке',''],['Акт приёмки','подписываем после монтажа','']];
+ $('#lkDoc').innerHTML=DOC.map(function(x,i){return '<div><span><b>'+x[0]+'</b><small>'+x[1]+'</small></span>'+(x[2]?'<button class="btn line sm" type="button" data-d="'+i+'">Открыть</button>':'<small>скоро</small>')+'</div>'}).join('')+'<p class="note" id="lkMsg" role="status"></p>';
+ $('#lkDoc').onclick=function(e){var b=e.target.closest('[data-d]');if(b)$('#lkMsg').textContent='Образец: в рабочей версии здесь откроется файл «'+DOC[+b.dataset.d][0]+'».'};
+ var MW=[['Кухня','900×1400','KBE Expert 70, 2-камерный, поворотно-откидная'],['Спальня','1300×1400','KBE Expert 70, 2-камерный, поворотно-откидная и глухая'],['Зал','2080×1500','KBE Expert 70, 2-камерный, поворотная, глухая и поворотно-откидная']];
+ $('#myWin').innerHTML=MW.map(function(m){return '<div class="mw"><h4>'+m[0]+', '+m[1]+' мм</h4><p>'+m[2]+'</p><div class="a"><a class="btn line sm" href="'+waLink('Здравствуйте! Заказ №РМ-2026-0143. Хочу заказать москитную сетку: '+m[0]+', '+m[1])+'" target="_blank" rel="noopener">Заказать москитку</a><a class="btn line sm" href="'+waLink('Здравствуйте! Заказ №РМ-2026-0143. Нужен мастер на регулировку: '+m[0]+', '+m[1])+'" target="_blank" rel="noopener">Вызвать мастера на регулировку</a></div></div>'}).join('');
+ $('#remBtn').onclick=function(){var t=new Date();t=new Date(t.getFullYear()+1,t.getMonth(),t.getDate()+3);saveFile('regulirovka-ramus.ics',mkIcs({day:1,start:t,title:'Регулировка фурнитуры окон, Рамус',loc:'Челябинск',desc:'Бесплатная регулировка в первый год. Позвоните +7 777 777-77-77 или напишите в WhatsApp, заказ №РМ-2026-0143.'}))};
+ $('#payRows').innerHTML='<tr><td>Предоплата 10%</td><td>'+dd(-8)+'</td><td class="ok">5 860 ₽ · оплачено</td></tr><tr><td>Остаток после акта</td><td>'+dd(2)+'</td><td>52 740 ₽</td></tr>';
+ var tabs=$$('#lkTabs [role=tab]');
+ function sel(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;var p=$('#'+x.getAttribute('aria-controls'));p.hidden=!on});if(t.id==='tb5')$('#unread').hidden=true}
+ tabs.forEach(function(t,i){t.onclick=function(){sel(t)};t.onkeydown=function(e){var k=e.key,n=-1;if(k==='ArrowRight'||k==='ArrowDown')n=(i+1)%tabs.length;else if(k==='ArrowLeft'||k==='ArrowUp')n=(i+tabs.length-1)%tabs.length;else if(k==='Home')n=0;else if(k==='End')n=tabs.length-1;if(n>=0){e.preventDefault();sel(tabs[n]);tabs[n].focus()}}});
+ var RP=['Принято, передам мастеру. Ответим в течение 15 минут.','Хорошо, записал. Если что-то изменится, напишу заранее.','Спасибо! Фото с производства уже в разделе «Фотоотчёт».'],rp=0;
+ $('#chatF').onsubmit=function(e){e.preventDefault();var v=$('#chatI').value.trim();if(!v)return;var c=$('#chat'),tm=new Date().toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'});c.insertAdjacentHTML('beforeend','<div class="msg me"><small>Вы · '+tm+'</small>'+esc(v)+'</div>');$('#chatI').value='';c.scrollTop=c.scrollHeight;
+  setTimeout(function(){c.insertAdjacentHTML('beforeend','<div class="msg"><small>Максим, менеджер · '+tm+'</small>'+RP[rp++%RP.length]+'</div>');c.scrollTop=c.scrollHeight},900)};
+}
+/* ---------- первый экран: окно собирается при прокрутке ---------- */
+var ASM=[['Рама ПВХ','Пять камер и стальной вкладыш внутри'],['Импост','Делит окно на две части'],['Створки','Одна открывается, вторая глухая'],['Стеклопакет','Три стекла, две камеры'],['Фурнитура','Ручка и петли, поворотно-откидное открывание'],['Готово','Цена под ключ видна в смете ниже']];
+var ASMN=['Рама','Импост','Створки','Стеклопакет','Фурнитура'];
+function stageOf(p){return p<.2?0:p<.34?1:p<.58?2:p<.76?3:p<.9?4:5}
+function initHero(){
+ var asm=$('#top'),inn=$('.asm-in'),hs={w:1500,h:1400,n:2,t:['k','f','f'],p:1,g:1,c:0,sill:0,slope:0,ebb:false,mesh:false,fl:1,lift:true,mount:true,dem:false,trash:false,disc:0};
+ $('#hfb').innerHTML=winSVG(hs,{big:true,nodim:true});
+ $('#asmSteps').innerHTML=ASMN.map(function(n,i){return '<li data-i="'+i+'">'+(i+1)+'. '+n+'</li>'}).join('');
+ var stat=RM||!window.THREE;
+ function noGL(){asm.classList.add('no3d');HV=null}
+ if(!window.THREE){noGL();return}
+ try{HV=new Viewer($('#hcv'),{hero:true,onLost:noGL});HV.setSpec({w:1.5,h:1.4,n:2,t:['k','f','f'],D:.07,c:0,g:1,pi:1,mesh:false,sill:0,ebb:false,slope:0});HV.apply()}catch(e){noGL();return}
+ if(RM){asm.classList.add('st')}
+ var lastP=-1,tick=false;
+ function prog(){
+  if(asm.classList.contains('st')||getComputedStyle(inn).position!=='sticky')return 1;
+  var r=asm.getBoundingClientRect(),tot=r.height-inn.offsetHeight,hh=$('#hd').offsetHeight;return tot>0?Math.max(0,Math.min(1,(hh-r.top)/tot)):1;
+ }
+ function upd(){
+  tick=false;var p=prog();if(Math.abs(p-lastP)<.0005)return;lastP=p;HV.setProgress(p);
+  var st=stageOf(p);$('#capN').textContent=st>=5?'✓':st+1;$('#capT').textContent=ASM[st][0];$('#capS').textContent=ASM[st][1];
+  $$('#asmSteps li').forEach(function(li,i){li.classList.toggle('on',i===st);li.classList.toggle('done',i<st||st===5)});
+  $('#asmBar').style.width=(p*100).toFixed(1)+'%';
+ }
+ function req(){if(!tick){tick=true;requestAnimationFrame(upd)}}
+ addEventListener('scroll',req,{passive:true});addEventListener('resize',req);upd();
+}
+/* ---------- прочее ---------- */
+function openNow(){var n=new Date(),m=n.getHours()*60+n.getMinutes(),on=m>=540&&m<1200,e=$('#openNow');e.classList.toggle('on',on);$('span',e).textContent=on?'Сейчас открыто, до 20:00':'Сейчас закрыто, откроемся в 9:00'}
+function misc(){
+ var hd=$('#hd'),bg=$('#burger');bg.onclick=function(){var o=hd.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+ $('#nav').onclick=function(e){if(e.target.tagName==='A')hd.classList.remove('open')};
+ document.addEventListener('error',function(e){var im=e.target;if(im&&im.tagName==='IMG'){var d=document.createElement('div');d.className='ph';d.setAttribute('role','img');d.setAttribute('aria-label',im.alt||'Фото');d.innerHTML='<svg viewBox="0 0 120 100" aria-hidden="true"><rect x="22" y="14" width="76" height="72" rx="4" fill="#fff" stroke="#9FB3BB" stroke-width="3"/><rect x="30" y="22" width="60" height="56" fill="#CFE5EE"/><path d="M60 22v56M30 50h60" stroke="#9FB3BB" stroke-width="3"/></svg>';im.replaceWith(d)}},true);
+ var els=$$('.rv-in');if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}})},{threshold:.15});els.forEach(function(x){io.observe(x)})}else els.forEach(function(x){x.classList.add('v')});
+ $('#tout').oninput=drawHeat;
+ $('#toWinter').onclick=function(){if(V){V.setSeason(1);V.setSide(1);setPressed('[data-sea]','sea',1);setPressed('[data-side]','side',1)}location.hash='#config'};
+}
+build();sashSel();bindCfg();mkCat();mkWorks();mkBook();mkInst();mkPay();mkCab();misc();openNow();setInterval(openNow,60000);
+render();initHero();init3d();
+})();
+</script>
+<a href="../index.html" class="tarify-back" aria-label="Вернуться ко всем тарифам" style="position:fixed;left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:2147483000;display:inline-flex;align-items:center;gap:6px;padding:11px 16px;border-radius:999px;background:rgba(20,20,20,.82);color:#fff;font:600 14px/1 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;text-decoration:none;box-shadow:0 8px 22px -6px rgba(0,0,0,.45);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)">← Все тарифы</a><script data-fp>(function(){try{var k="fp:"+location.pathname.split("/")[1],q=/[?&]from=portfolio(&|$)/.test(location.search);if(q)sessionStorage.setItem(k,"1");if(q||sessionStorage.getItem(k)){var b=document.querySelector(".tarify-back");if(b)b.style.display="none"}}catch(e){}})();</script>
+</body>
+</html>
